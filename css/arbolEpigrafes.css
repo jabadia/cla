@@ -1,0 +1,54 @@
+body {
+	font-family: verdana; color: #000000; padding: 0; margin: 0;
+	font-size: 12px;
+}
+
+#menu1 {
+	font-size:100%;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+	list-style-position: inside;  
+}
+
+unknow{
+	list-style-position: outside
+}
+
+.cAbierta {
+	list-style-image:url(../img/iconos/carpeta_menos.gif);
+	list-style-type: none;
+	cursor: hand; 
+
+}
+.cCerrada {
+	list-style-image:url(../img/iconos/carpeta_mas.gif);
+	list-style-type: none;
+	cursor: hand; 
+}
+
+/*Clase para resultado de busquedas*/
+.cResultadoBusqueda{
+	/*list-style: circle inside;*/
+	list-style-image:url(../img/iconos/flecha.gif);
+	background-color:#f9f8ee;
+}
+.tagResultadoBusqueda{
+	background-color:#f9f8ee;
+}
+
+.cNodoFinal{
+	background-color:none;
+	list-style-type: none;
+}
+
+.cVacio{
+	background-color:none;
+	list-style-type: none;
+}
+
+#menu1 A {
+	COLOR: #006699
+}
+.documentoActual A {
+	COLOR: #993300
+}

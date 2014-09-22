@@ -1,0 +1,226 @@
+/* ========================================================================== */
+
+#contenedor, #contenido, #cabecera, #cabeceraAplicacion, #cabecera #menuHorizontal, #navegacion, #navegacionInterior, #pagina, .contenedor_columnas, #nav_local, .columna1, .columna2, .columna3, .columna4, * html .columna1, * html .columna2, * html .columna3, * html .columna4, .banner_desc, .banner_desc p, .cabecera_detalle_mensaje{
+	float: none;
+	width: 100%;
+	background: none;
+	margin-left: 0; margin-right: 0;
+	padding-left: 0; padding-right: 0;
+}
+#navegacion, * html #navegacion {
+	
+	width: 100%;
+}
+* html #cabecera { margin-left: 0;}
+.cs1 { background: none; }
+.cs2 { background: none; }
+.cs3 { background: none; }
+#cabecera div, #nav_local, #pie .menu_auxiliar, #menuHorizontalInterior3, #logout {
+	display: none;
+}
+
+#cabecera #logoAyre, #cabecera #logoAyto,  #cabecera #menuHorizontal, #cabecera #menuHorizontal div {
+	display: block;
+}
+#cabecera #logoAyre {
+	float: left;
+	width: 4.375em;
+	height: 4.875em;
+	overflow: hidden;
+}
+
+#cabecera #logoAyto {
+	float: right;
+	width: 3.125em;
+	height: 4.375em;
+	overflow: hidden;
+}
+#cabecera #logoAyto img {
+	position: relative;
+	left: -15px;
+}
+
+#cabecera #menuHorizontal {
+	clear: both;
+	margin-left: 0; margin-right: 0;
+	padding-left: 0; padding-right: 0;
+	color: #000000;
+}
+#navegacionInterior, #navegacion a, #navegacion a:visited {color: #000000;text-decoration: none}
+
+.panel1, .panel2, .panel3, .panel4 {
+	float: none;
+	width: 100%;
+	min-height: 1em;
+}
+/*comprobar*/
+* html .panel1, * html .panel2, * html .panel3, * html .panel4 {
+	float: none;
+	width: 100%;
+	height: auto;
+}
+.anchura1, .anchura2, .adicional .anchura1, .adicional .anchura2, .columna1 .adicional .portlet {
+	float: none;
+	width: 100%;
+	padding: 0;
+}
+html * .adicional .portlet {
+	border: none;
+}
+/* ========================================================================== */
+/* contenidos varios */
+.columna_contenido, .columna_ficha {
+	margin-left: 0; margin-right: 0;
+	padding-left: 0; padding-right: 0;
+	float: none;
+	width: 100%;
+}
+
+.herramientas, .subir, .ver_mas {
+	display: none;
+}
+
+
+
+.subestructura3, .subestructura3 .columna_contenido, .subestructura21, .subestructura21 .columna_contenido {
+	overflow: visible;
+	width: 100%;
+	background-image: none;
+}
+
+.subestructura21 .columna_ficha, .subestructura31 .columna_ficha {
+	margin-top: 1em;
+	border-top: 1px dashed #569dd3;
+	width: 100%;
+	clear: both;
+	
+	
+
+}
+
+/* ========================== */
+/* listado_contenidos */
+.listado_contenidos a, .listado_coleccion a {
+	text-decoration: none;
+}
+.listado_contenidos a:hover, .listado_coleccion a:hover {
+	text-decoration: underline;
+}
+.listado_contenidos ul, .listado_coleccion ul {
+	margin: 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	
+	/*padding: 0 0 0 5em;*/
+}
+.listado_contenidos ul li, .listado_coleccion ul li {
+	margin: .3em 0 .3em 0;
+	padding: 0 0 0 0;
+	clear: both;
+}
+.listado_contenidos ul p, .listado_coleccion ul p {
+	color: #666666;
+	font-size: .7em;
+}
+.listado_contenidos ul p a, .listado_coleccion ul p a {
+	color: #666666;
+}
+.listado_contenidos ul p.titulo a, .listado_coleccion ul p.titulo a {
+	font-family: trebuchet MS;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #040D49;
+}
+/* listado_contenidos con foto */
+.listado_contenidos ul li.foto, .listado_coleccion ul li.foto {
+	height: 100%;
+	list-style-image:url(../img/circulosgrmas_imp.gif);
+	padding: 0pt 0pt 0.5em 0;
+}
+.listado_contenidos ul li.foto dl {
+	position: relative;
+	z-index: 999;
+}
+.listado_coleccion ul li.foto dl {
+	position: relative;
+	z-index: 999;
+}
+.listado_contenidos ul li.foto img, .listado_coleccion ul li.foto img {
+	margin-left: -6.3em;
+	width: 5.357em;
+	height: 5.357em;
+	border: 1px solid #646CA2;
+	float: left;
+}
+.listado_contenidos ul li.foto img.default {
+	height: 1.25em;
+	border: none;
+	margin-top: .4em;
+}
+.listado_contenidos .destacados {
+ background: none;
+ border: 1px solid #DDDDDD;
+}
+.detalle_generico .detalle_agrupacion, .detalleListaEspecial {
+	border: 1px solid #AAAAAA;
+}
+
+
+
+/*=================*/
+td.header, thead th, th.header { 
+	border-bottom: 1px solid #DDEBF6;
+	border-right: 1px solid #DDEBF6;
+	background: none;
+}
+/*=================*/
+.columna_ficha h2 {
+	background: none;
+	color:#569dd3;
+	margin: 1em 0 .5em .4em;
+	padding: .15em 0 .15em 0.250em;
+	border: none;
+	text-decoration: underline;
+}
+.columna_ficha ul.auxi {
+	display: none;
+}
+.decorativo_novedades {
+	display: none;
+	border: 1px solid red;
+}
+.plegable {display: block}
+
+
+
+
+/* ====================================================================== */
+.detalle_generico .texto dd ul {
+	margin: 0;
+	padding: 0 0 0 1.5em;
+}
+.detalle_generico .texto dd ul li {
+	background: none;
+	list-style-image:url(../img/bullet_dist_subnivel.gif);
+	padding: 0pt 0pt 0.5em 0;
+}
+
+div.info, div.advertencia, div.error, div.sinpermisos { background:none; padding-left: 0; }
+div.mensaje_aviso ul li {background:none;list-style-position:outside;list-style-type:square;margin:0 0 0 1.5em;padding: 0;text-indent:0pt;}
+/*foros*/
+
+h2.tema, #barralegend, #barralegend_detalle {
+	background: none;
+	padding: 0;
+}
+.tablaforo th, .tablaforo td{
+	border-bottom:0.09em solid #CBE0F1;
+}
+.botoneraForo, #cajaForos {
+	display: none;
+}
+
+/* ======================================================================= */
+/* === esto luego borrarlo === */
+#divStayTopLeft {display: none;}
+

@@ -1,0 +1,42 @@
+@CHARSET "ISO-8859-1";
+/* --- AUTOCOMPLETE CSS 13/11/2008 --- */
+
+.autocomplete {
+  font-size:0.7em;
+  position: absolute;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #666;
+  /*font-family: Arial;*/
+  margin:0px;
+  overflow-y:auto !important;
+  overflow-x:visible;
+  /*overflow-x:visible !important;*/
+}
+
+.autocomplete ul {
+  margin:0em;
+  list-style:none; 
+}
+
+.autocomplete li {
+  white-space:nowrap;
+  cursor:pointer;
+  padding:0.2em 0em;
+}
+
+.autocomplete li.selected {
+  color:#FFFFFF;
+  background: #196DC3;
+}
+
+
+/* Animated throbber */
+
+input.form-autocomplete {
+  background: url('../img/throbber.gif') no-repeat 100% 2px;
+}
+
+input.throbbing {
+  background-position: 100% -18px;
+}

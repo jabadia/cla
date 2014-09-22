@@ -1,0 +1,1289 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es" style="overflow-x:hidden;">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<head>
+<title>AYRE - Intranet del Ayuntamiento de Madrid</title>
+<!-- base href="http://localhost:9080/webCLA/"/ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/principal.css" type="text/css" />
+<link rel="stylesheet" href="css/formularios.css" type="text/css" />
+<link rel="stylesheet" href="css/aplicaciones.css" type="text/css" />
+<link rel="stylesheet" href="css/autocomplete.css" type="text/css" />
+<link rel="stylesheet" href="css/impresion.css" type="text/css"	media="print" />
+<!--[if IE ]>
+	<link rel="stylesheet" href="css/ie.css" />
+<![endif]-->
+ 
+ 
+ 
+ 
+<script> 
+ 
+var OPER_DIVIDIR = "dividir";
+ 
+var AUDIT_OPE_UNIR_FIN = "UNF";
+ 
+var ACCESO_EXT_CONSULTA = "CONSULTA";
+ 
+var ACCEX_ROLDATOS = "ACCEX_ROLDATOS";
+ 
+var MENU_GE_AGRUPACIONES = "AG";
+ 
+var AUDIT_PERFIL = "PAC";
+ 
+var SECC_DATOS_INTERNA_PREFIX = "SDI";
+ 
+var ACTIVIDAD_MOTIVO_ALTA = "Alta actividad desde la Web";
+ 
+var TIPO_EXP_CCO = "1";
+ 
+var MAX_HASTA = "10000";
+ 
+var BDC_ERROR_NUMAPP = "NUMAPP_NO_VALIDO";
+ 
+var ID_LOCAL_MAX_MIGCLAI = "270524237";
+ 
+var MIN_DESDE = "0";
+ 
+var ES_LOCAL = "L";
+ 
+var ACCEX_TIPEX_INT_OPC = "ACCESO.EXTERNO.TIPEX.INT.OPC";
+ 
+var SECUENCIAL_INCREMENTO = "10";
+ 
+var ENTIDAD_SIGMA_AGRUPACION = "A";
+ 
+var TIPO_SUJETO_COMUNIDAD_PROP = "3";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_SIN_ID = "285000000";
+ 
+var TRUE = "true";
+ 
+var AUDIT_CENSO_HISTORICO = "CCH";
+ 
+var SIT_LOCAL_BAJA = "8";
+ 
+var ENTIDAD_SIGMA_LOCAL = "L";
+ 
+var BDC_ERROR_DIR = "DIR_NO_VALIDA";
+ 
+var SECC_DATOS_DATEP = "DATEP";
+ 
+var DIR_VARIAS_COINCIDENCIAS = "-4";
+ 
+var ROL_DATOS_ACCESO_GIS = "ROLDATOS_ACCESO_GIS";
+ 
+var BDC_ERROR_NN = "NO_NORMALIZADA";
+ 
+var OPER_REUNIFICAR = "reunificar";
+ 
+var BDC_CLSDIRECCION_CAM = "2";
+ 
+var TABLA_CLASES = "OBCLAS";
+ 
+var SECC_DATOS_INTERNAS = "ACAL#INAL#INMO#ACMO";
+ 
+var BDC_PROVINCIA_COD = "28";
+ 
+var URL_CENSO_HISTORICO = "URL.CENSO.HISTORICO";
+ 
+var DIR_NO_VALIDA = "-1";
+ 
+var ID_LOCAL_INICIAL = "1";
+ 
+var TABLA_EPIGRAFE = "EPIACT";
+ 
+var AUDIT_OPE_DIVIDIR_INI = "DVI";
+ 
+var ESTADO_DATOS_VALIDADO = "2";
+ 
+var EPIGRAFE_GRAL1 = "PTECO1";
+ 
+var EPIGRAFE_GRAL2 = "PTECO2";
+ 
+var SECUENCIAL_NO_VALIDO = "-1";
+ 
+var BDC_ERROR_VARIOS_REG = "VARIOS_REG";
+ 
+var OP_GES_LICENCIAS = "gesLicencias";
+ 
+var SISTEMA_PLATEA = "PLATEA";
+ 
+var TIPO_DIRECCION_NOTIFICACION = "Notificacion";
+ 
+var EPIGRAFES_TERRAZAS_VELADORES = "EPIS_TERRAZAS";
+ 
+var DISTRITO_REGULARIZADO = "DIS_REGULARIZADO";
+ 
+var APLICACION_REG_WCLA = "WCLA";
+ 
+var LOCAL_NULO_AGRUPADO = "0";
+ 
+var TABLA_TIPPER = "TIPINP";
+ 
+var TIPO_SUJETO_FISICO = "2";
+ 
+var AUDIT_OPE_DESHACER = "DES";
+ 
+var BDC_CODLOCAL = "0";
+ 
+var SIT_ACTIVIDAD_CESADA = "21";
+ 
+var EP_WS_GIS = "ENDPOINT.CLIENTE.WSGIS";
+ 
+var LOCAL_SI_AGRUPADO = "1";
+ 
+var OP_MODIFICACION = "modificacion";
+ 
+var ACCEX_MENUS_CONSULTA = "18";
+ 
+var TABLA_TIPO = "OBTIPO";
+ 
+var DIR_NO_VALIDA_NUMAPP = "-7";
+ 
+var SELECCIONE = "-1";
+ 
+var TIPO_INTERIOR = "3";
+ 
+var NO_INT_SELECCIONADO = "-1";
+ 
+var FALSE = "false";
+ 
+var MOT_REL_REUNIFICAR = "1";
+ 
+var SIZE_CODIGO_LOCAL = "10";
+ 
+var SECC_DATOS_INOP = "SDIINOP";
+ 
+var TIPO_NUM = "NUM";
+ 
+var MOT_REL_DIVISION = "3";
+ 
+var OP_OPERACION = "operacion";
+ 
+var SECC_DATOS_INAL = "SDIINAL";
+ 
+var SECC_DATOS_ESTDA = "ESTDA";
+ 
+var USU_CARGA_INICIAL = "MIGCLAI";
+ 
+var ESTADO_VIGENCIA_ACTIVO = "1";
+ 
+var TABLA_USOS = "OBUSOS";
+ 
+var EP_WS_CENSOHISTORICO = "ENDPOINT.CLIENTE.WSCENSOHISTORICO";
+ 
+var TIPO_PERIODO_TERRAZA_ESTACIONAL = "EST";
+ 
+var SIT_LOCAL_ABIERTO = "1";
+ 
+var AUDIT_ROL = "RDT";
+ 
+var AGRUPACION_VIGENTE = "VIGENTE";
+ 
+var TABLA_TIPDOC = "TIPDOC";
+ 
+var TIPO_INSTA_CERRAMIENTO = "3";
+ 
+var ACTIVIDAD_MOTIVO_ACTUALIZAR = "Modificacion de la actividad desde la Web";
+ 
+var BUSCAR_CUALQUIER_ACCESO = "0";
+ 
+var AUDIT_ALTA = "ALT";
+ 
+var TIPO_KM = "KM.";
+ 
+var AUDIT_ACTIVIDAD = "ACT";
+ 
+var OPER_DESH_OPERACION = "deshacerOperacion";
+ 
+var EP_UWEB = "UWEB.ENDPOINT";
+ 
+var SIT_LOCAL_CERRADO = "4";
+ 
+var SECC_DATOS_ACAL = "SDIACAL";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO = "280000000";
+ 
+var BDC_ERROR_GENERICO = "BDC_ERROR_GENERICO";
+ 
+var AREA_AGRUPACION = "AGRUPACION";
+ 
+var ACCESO_EXT_PERFIL_ACTUA = "GESTR";
+ 
+var CE_ERROR = "error";
+ 
+var MENU_GE_ADMINISTRACION = "AD";
+ 
+var ES_POSICION_MODIF = "M";
+ 
+var ACCESO_EXT_ALTA = "ALTA";
+ 
+var SUJETO_EXISTENTE_ADVERTIR = "S_A";
+ 
+var OP_ACTIVIDAD = "actividad";
+ 
+var PREFIJO_PISCINA = "PISCINA";
+ 
+var TIPO_PERIODO_TERRAZA_ANUAL = "ANU";
+ 
+var ACCEX_SECC_DATOS_ALTA = "SALUD#HORAR#URBAN#SEGUR";
+ 
+var AGRUPACION_NULA = "99000000";
+ 
+var DIR_NO_VALIDA_VIARIO_NACION = "-6";
+ 
+var SIT_LOCAL_BAJA_PCA = "10";
+ 
+var PERFIL_ACTUA_PERSON = "PERSO";
+ 
+var AUX_APROX_POSTAL_TIPO_NUMERACION = "1";
+ 
+var SECUENCIAL_INICIAL = "1000";
+ 
+var SECC_DATOS_IDENT = "IDENT";
+ 
+var SECC_DATOS_SALUD = "SALUD";
+ 
+var BUSCAR_SOLO_EDIFICIO = "1";
+ 
+var BUSCAR_SOLO_PRINCIPAL = "2";
+ 
+var PREFIJO_EDIFICIO = "EDIFICIO";
+ 
+var USU_TRAJAJO_CAMPO = "MTCCLAI";
+ 
+var DIR_NO_NORMAL = "-3";
+ 
+var PETIC_POSIC_PENDTE_CON_ERROR = "1";
+ 
+var URL_SIGMA = "URL.SIGMA";
+ 
+var AUX_APROX_POSTAL_TIPO_LOCAL = "2";
+ 
+var SECC_DATOS_HORAR = "HORAR";
+ 
+var CE_INFORMACION = "informacion";
+ 
+var KEY_VACIO = "";
+ 
+var BDC_CIUDAD_COD = "54953";
+ 
+var BDC_CLSDIRECCION = "1";
+ 
+var EP_WS_CENSO = "ENDPOINT.CLIENTE.WSCENSO";
+ 
+var LOCAL_MOTIVO_BAJA_AGRUPACION = "BAJA AGRUPACION";
+ 
+var LOCAL_MERCADILLO = "4";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_ESTAD = "290000000";
+ 
+var PREFIJO_SITUADO_AISLADO = "SITUADO";
+ 
+var CE_CONFIRMACION = "confirmacion";
+ 
+var TIPOS_ACCESO_DIS_REG = "TIPOS_ACCESO_DIS_REG";
+ 
+var BDC_ERROR_VIARIO_NACION = "VIARIO_NAC_NO_VALIDO";
+ 
+var LOCAL_OTRO_SITUADO = "3";
+ 
+var OP_SIGMA_BAJA = "baja";
+ 
+var TIPO_DIRECCION_FISCAL = "Fiscal";
+ 
+var MENU_GE_LOCALES = "LC";
+ 
+var AUDIT_OPE_REUNIFICAR_FIN = "RUF";
+ 
+var AUDIT_OPE_UNIR_INI = "UNI";
+ 
+var SECC_DATOS_ACMO = "SDIACMO";
+ 
+var SECC_DATOS_INMO = "SDIINMO";
+ 
+var MAX_ID_LOCAL_OLD = "MAX_ID_LOCAL_OLD";
+ 
+var TIPO_EXP_TRC = "0";
+ 
+var ACCESO_UNICO = "-1";
+ 
+var PREFIJO_MERCADILLO = "MERCADILLO";
+ 
+var AUDIT_INTERESADO = "INT";
+ 
+var SUJETO_EXISTENTE_NO_GRABAR = "S_NG";
+ 
+var USUARIO_SESION = "USUARIO_SESION";
+ 
+var OPER_UNIR = "unir";
+ 
+var CE_ADVERTENCIA = "advertencia";
+ 
+var TIPO_PISCINA = "10";
+ 
+var TABLA_CATEGORIA = "OBCATE";
+ 
+var REPRESENTACION_PLANO = "P";
+ 
+var BUSCAR_CUALQUIER_ACCESO_VIGENTE = "3";
+ 
+var BUSCAR_CUALQUIER_ACCESO_NOVIGENTE = "4";
+ 
+var PREFIJO_SOLAR = "SOLAR";
+ 
+var SECUENCIAL_VALIDO = "0";
+ 
+var DIR_ERROR_BDC = "-5";
+ 
+var SEPARADOR = "#";
+ 
+var WCLA_NOCONTROL_DIRNN = "DIRNN_NOCONTROL";
+ 
+var AUDIT_AGRUPACION = "AGR";
+ 
+var SIT_LOCAL_BAJA_REUNIFICACION = "9";
+ 
+var MOT_REL_UNION = "2";
+ 
+var ESTADO_VIGENCIA_NOACTIVO = "2";
+ 
+var AUDIT_MODIF = "MOD";
+ 
+var ACTIVIDAD_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var LOCAL_MOTIVO_BAJA = "BAJA";
+ 
+var SELECT_TIPOVIA_BDC = "CALLE                   ";
+ 
+var LOCAL_NO_AGRUPADO = "2";
+ 
+var PREFIJO_MERCADILLO_RASTRO = "RASTRO";
+ 
+var TIPO_EDIFICIO_SINDEFINIR = "5";
+ 
+var CARPETA_PLANTILLAS_INFORMES = "/plantillaInformes/";
+ 
+var SECUENCIAL_REPETIDO = "-2";
+ 
+var ACCEX_MENUS_ALTA = "2#15";
+ 
+var NO_STRING_SELECCIONADO = "-1";
+ 
+var SECC_DATOS_GPCA = "GPCA";
+ 
+var AUDIT_CONSULTA = "CON";
+ 
+var LOCAL_MOTIVO_ALTA = "ALTA";
+ 
+var RESULTADOS_POR_PAGINA = "10";
+ 
+var ACCESO_EXT_MODIFICAR = "MODIFICAR";
+ 
+var TIPO_PUERTA_CALLE = "1";
+ 
+var TIPO_AGR_NO_SIGMA = "TIPO_AGR_NO_SIGMA";
+ 
+var BAJA_AGRUPACION = "1";
+ 
+var AREA_ACTIVIDAD = "ACTIVIDAD";
+ 
+var TABLA_LETRA = "LETEST";
+ 
+var BDC_CIUDAD = "MADRID";
+ 
+var URL_ENTIDAD_SIGSA = "URL.ENTIDAD.SIGSA";
+ 
+var BDC_ERROR_VIA = "VIA_NO_VALIDA";
+ 
+var DIRECCION_LONG_MAXIMA = "39";
+ 
+var AUDIT_USUARIO = "USU";
+ 
+var SIZE_NDP = "8";
+ 
+var ESTADO_DATOS_HISTORICO = "4";
+ 
+var LOCAL_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var TIPO_SUJETO_JURIDICO = "1";
+ 
+var ROLDATOS_ACEGI = "ROLDATOS_ACEGI";
+ 
+var DISTRITO_DIR_NN_MER_RASTRO = "CENTRO";
+ 
+var ESTADO_DATOS_PROVISIONAL_CARGA = "3";
+ 
+var TIPO_EXP_ELU = "2";
+ 
+var SECC_DATOS_URBAN = "URBAN";
+ 
+var PETIC_POSIC_PENDTE_SIN_TRATAR = "0";
+ 
+var TIPO_MERCADILLO_RASTRO = "7";
+ 
+var TIPO_SOLAR = "8";
+ 
+var SECC_DATOS_SEGUR = "SEGUR";
+ 
+var AGRUPACION_NO_VIGENTE = "NO VIGENTE";
+ 
+var RESULTADOS_AJAX = "30";
+ 
+var BDC_PROVINCIA = "MADRID";
+ 
+var SECC_DATOS_INCARTO = "SDICARTO";
+ 
+var ESTADO_DATOS_PENDIENTE_VALIDACION = "1";
+ 
+var PREFIJO_CTF = "CENTRO TRANSF.";
+ 
+var MARCO_CENSO = "15";
+ 
+var ID_LOCAL_MIN_MTCCLAI = "280000000";
+ 
+var TIPO_DIRECCION_NOTIFICACION_ACTIVIDAD = "NotifiActividad";
+ 
+var TIPO_SN = "S/N";
+ 
+var LOCAL_MOTIVO_MODIF = "MODIFICACION";
+ 
+var TIPO_EDIFICIO = "9";
+ 
+var BDC_CLSDIRECCION_NN = "9";
+ 
+var TIPO_MERCADILLO = "5";
+ 
+var AREA_LOCAL = "LOCAL";
+ 
+var SECC_DATOS_GECAR = "GECAR";
+ 
+var AREA_INTERESADOS = "INTERESADOS";
+ 
+var SIT_PREFIJO_BAJA = "Baja";
+ 
+var MENU_GE_INTERESADOS = "IN";
+ 
+var MENU_GE_ACTIVIDADES = "AC";
+ 
+var TIPO_AGRUPADO = "0";
+ 
+var DIR_NO_NORMAL_NO_PERMITIDA = "-8";
+ 
+var OP_CONSULTA = "consulta";
+ 
+var ESTADO_VIGENCIA_AMBOS = "0";
+ 
+var EP_WS_INTERESADOS = "ENDPOINT.CLIENTE.WSINTERESADOS";
+ 
+var ES_AGRUPACION = "A";
+ 
+var SECC_DATOS_SELEP = "SELEP";
+ 
+var BDC_PAIS = "ESPAÑA";
+ 
+var TIPO_SITUADO_AISLADO = "4";
+ 
+var AUDIT_OPE_REUNIFICAR_INI = "RUI";
+ 
+var TIPO_SUJETO_ORGANISMO = "4";
+ 
+var DIR_NO_VALIDA_NN = "-2";
+ 
+var AUDIT_BAJA = "BAJ";
+ 
+var SIT_ACTIVIDAD_ABIERTA = "20";
+ 
+var SECC_DATOS_CONTR = "CONTR";
+ 
+var APLICACION_AC_WCLA_SIGSA = "AC_SIGSA";
+ 
+var FORMAT_NOM_CLASE_BDC = "%1$-24S";
+ 
+var AUDIT_LOCAL = "LOC";
+ 
+var TIPO_OTRO_SITUADO = "6";
+ 
+var TIPO_PCA = "12";
+ 
+var AUDIT_OPE_DIVIDIR_FIN = "DVF";
+ 
+var REPRESENTACION_EDIFICO = "E";
+ 
+var SECC_DATOS_DETEP = "DETEP";
+ 
+var TIPO_CTF = "11";
+ 
+var ES_POSICION_BAJA = "B";
+ 
+var ES_POSICION_ALTA = "A";
+ 
+var TIPO_EXP_ELF = "3";
+ 
+var EP_WS_ECLUS = "ENDPOINT.CLIENTE.WSECLUS";
+ 
+var ACCEX_PERFILACTUA = "ACCEX_PERFILACTUA";
+ 
+</script>
+ 
+ 
+<script src="js/general.js" type="text/javascript"></script>
+<script src="js/local.js" type="text/javascript"></script>
+<script src="js/generalCenso.js" type="text/javascript"></script>
+</head>
+ 
+<body>
+<script type="text/javascript" language="javascript"> 
+	function ir(pagina){
+		document.getElementById("irAPagina").value=pagina;
+		document.getElementById("localCriteriosForm").submit();    				
+	}		
+</script>
+ 
+	<script type="text/javascript" language="javascript">
+		document.onkeyup=function()
+		 {
+			if(event.keyCode == 13)
+			{
+				irFiltro();
+			}
+		 }
+	</script>	 
+ 
+	
+	
+ 
+<!-- Inicio div contenedor -->
+<div id="contenedor">
+ 
+<!-- Inicio div de contenido -->
+<div id="contenido">
+ 
+ 
+	<h3>Resultado búsqueda consulta de locales</h3>	
+ 
+ 
+ 
+<!-- Ini Area errores -->
+	
+	<!-- Ini Area mensajes Informativos -->
+		
+	<!-- Area mensajes Advertencia -->
+	
+<!-- Fin mensajes de error -->	
+									
+	<div class="listado_contenidos">
+	<form name="localCriteriosForm" method="post" action="/WCLA/buscarLocal.do?accion=resultado">
+		<input type="hidden" name="irAPagina" value="">
+		<br/>	
+		<div class="info_form">
+		<p>Criterios de búsqueda seleccionados:</p>
+		<p>					
+			
+			
+			
+							
+				
+			
+			
+			
+				
+				<b>Nombre de vía: </b><em>CALLE                   &nbsp;ALCALA</em><br/>
+ 
+				
+					<b>Búsqueda por Rango</b><br/>
+						
+						<b>Rango de números: </b><em>1-5</em><br/>
+										
+							
+					
+					
+						<b>Para todos los accesos al local</b><br/>
+					
+					
+					
+					
+												
+				
+				
+						
+			
+					
+			
+			
+			
+			
+			
+			
+			
+		</p>
+		</div>
+		<br/>
+ 
+		<div class="info_busqueda">
+			<dl class="resultados_busqueda">
+				<dt>Total:</dt>
+				<dd>38</dd>
+				<dt class="mostrados">Mostrados:1 al 10</dt>
+				<dd></dd>
+			</dl>
+		</div>
+		
+		<div class="paginacion">
+				
+			<span class="seleccionado" title="página actual">Página <strong>1 de 4</strong></span>		
+			
+				<a href="javascript:ir(2);" title="ir a la página siguiente" class="asiguiente"><img src="img/pag_siguiente.gif" alt="siguiente" /></a>
+				<a href="javascript:ir(4);" title="ir a la última página" class="aultima"><img src="img/pag_fin.gif" alt="fin" /></a>		
+			
+		</div>
+ 
+		<div class="texto">
+			<table>
+			<tr>
+					
+					<th style="width:7em;">Id. Local</th>
+				
+				
+				
+				
+				
+				<th>Tipo acceso</th>
+				
+				<th>Acceso principal</th>
+				
+													
+					<th style="width:7em;">Estado</th>	
+				
+																		
+					<th>Situación</th>				
+				
+				
+				<th>Rotulo actividad</th>	
+				
+				<th style="width:2.5em;">&nbsp;</th>						
+				<th style="width:2.5em;">&nbsp;</th>
+			</tr>
+						
+			
+				
+					<tr class="impar">		
+									
+							<td class="hand" onclick="javascript:irConsulta(280012039,'', '');">
+								280012039
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(280012039,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(280012039,'', '');" >
+							
+								CALLE ALCALA,  1	
+								 L-10	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(280012039,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(280012039,'', '');">Abierto</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(280012039,'', '');">
+							
+								
+								
+									<div style="color:#569dd3;">CONSEJERIA DE HACIENDA</div>
+								
+							
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","280012039","20006648")'/></td>						
+						
+						
+						
+						
+						
+						
+							
+								<td class="hand"><img src="img/iconos/modificar.gif" class="icono" onclick="javascript:irConsultaActividadLocal(203290,'');" alt="Consulta actividad del local"/></td>							
+							
+							
+						
+						
+					</tr>				
+				
+					<tr class="par">		
+									
+							<td class="hand" onclick="javascript:irConsulta(270220197,'', '');">
+								270220197
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270220197,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270220197,'', '');" >
+							
+								CALLE ALCALA,  1	
+								 L-20	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(270220197,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(270220197,'', '');">Abierto</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(270220197,'', '');">
+							
+								
+								
+									<div style="color:#569dd3;">CAJA MADRID</div>
+								
+							
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","270220197","20006648")'/></td>						
+						
+						
+						
+						
+						
+						
+							
+								<td class="hand"><img src="img/iconos/modificar.gif" class="icono" onclick="javascript:irConsultaActividadLocal(38065,'');" alt="Consulta actividad del local"/></td>							
+							
+							
+						
+						
+					</tr>				
+				
+					<tr class="impar">		
+									
+							<td class="hand" onclick="javascript:irConsulta(270553096,'', '');">
+								270553096
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270553096,'', '');">
+							PC Asociado	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270553096,'', '');" title="Id. Local Asociado: 270220197">
+							
+								CALLE ALCALA,  1	
+								 L-20*	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(270553096,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(270553096,'', '');">Cerrado</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(270553096,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						
+						<td><img src="img/iconos/mal.GIF" class="icono" alt="Local no posicionado"/></td>						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+				
+					<tr class="par">		
+									
+							<td class="hand" onclick="javascript:irConsulta(270553097,'', '');">
+								270553097
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270553097,'', '');">
+							PC Asociado	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270553097,'', '');" title="Id. Local Asociado: 270220197">
+							
+								CALLE ALCALA,  1	
+								 L-20*	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(270553097,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(270553097,'', '');">Abierto</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(270553097,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						
+						<td><img src="img/iconos/mal.GIF" class="icono" alt="Local no posicionado"/></td>						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+				
+					<tr class="impar">		
+									
+							<td class="hand" onclick="javascript:irConsulta(270531480,'', '');">
+								270531480
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270531480,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(270531480,'', '');" >
+							
+								CALLE ALCALA,  1	
+								 P-0	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#E54C4C;" onclick="javascript:irConsulta(270531480,'', '');">Historico</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(270531480,'', '');">Abierto</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(270531480,'', '');">
+							
+								
+								
+									<div style="color:#569dd3;">FLORISTERIA ADRIANA</div>
+								
+							
+							
+						</td>
+						
+						
+						
+						<td><img src="img/iconos/mal.GIF" class="icono" alt="Local no posicionado"/></td>						
+						
+						
+						
+						
+						
+							
+								<td class="hand"><img src="img/iconos/modificar.gif" class="icono" onclick="javascript:irConsultaActividadLocal(189760,'');" alt="Consulta actividad del local"/></td>							
+							
+							
+						
+						
+					</tr>				
+				
+					<tr class="par">		
+									
+							<td class="hand" onclick="javascript:irConsulta(285004068,'', '');">
+								285004068
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004068,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004068,'', '');" >
+							
+								CALLE ALCALA,  2	
+								 L-10	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(285004068,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(285004068,'', '');">En obras</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(285004068,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","285004068","20006640")'/></td>						
+						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+				
+					<tr class="impar">		
+									
+							<td class="hand" onclick="javascript:irConsulta(285004069,'', '');">
+								285004069
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004069,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004069,'', '');" >
+							
+								CALLE ALCALA,  2	
+								 L-20	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(285004069,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(285004069,'', '');">En obras</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(285004069,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","285004069","20006640")'/></td>						
+						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+				
+					<tr class="par">		
+									
+							<td class="hand" onclick="javascript:irConsulta(285004070,'', '');">
+								285004070
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004070,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004070,'', '');" >
+							
+								PLAZA PUERTA DEL SOL,  1	
+								 L-30	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(285004070,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(285004070,'', '');">Abierto</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(285004070,'', '');">
+							
+								
+								
+									<div style="color:#569dd3;">APPLE STORE</div>
+								
+							
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","285004070","20006640")'/></td>						
+						
+						
+						
+						
+						
+						
+							
+								<td class="hand"><img src="img/iconos/modificar.gif" class="icono" onclick="javascript:irConsultaActividadLocal(254711,'');" alt="Consulta actividad del local"/></td>							
+							
+							
+						
+						
+					</tr>				
+				
+					<tr class="impar">		
+									
+							<td class="hand" onclick="javascript:irConsulta(285004071,'', '');">
+								285004071
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004071,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004071,'', '');" >
+							
+								PLAZA PUERTA DEL SOL,  1	
+								 L-40	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(285004071,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(285004071,'', '');">En obras</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(285004071,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","285004071","20006640")'/></td>						
+						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+				
+					<tr class="par">		
+									
+							<td class="hand" onclick="javascript:irConsulta(285004072,'', '');">
+								285004072
+							</td>
+									
+																
+						
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004072,'', '');">
+							Puerta Calle	
+						</td>	
+						
+						
+						<td class="hand" onclick="javascript:irConsulta(285004072,'', '');" >
+							
+								PLAZA PUERTA DEL SOL,  1	
+								 L-50	
+							
+							
+						</td>										
+ 
+						
+							<td class="hand" style="color:#569dd3;" onclick="javascript:irConsulta(285004072,'', '');">Definitivo</td>
+						
+						
+							<td class="hand" onclick="javascript:irConsulta(285004072,'', '');">En obras</td>
+						
+ 
+						<td class="hand" onclick="javascript:irConsulta(285004072,'', '');">
+							
+							
+								
+									
+									
+										<div>Sin actividad asociada</div>
+									
+								
+								
+							
+						</td>
+						
+						
+						<td class="hand"><img src="img/lupaform.gif" class="icono" alt="Plano" onclick='javascript:consultaSigma("L","285004072","20006640")'/></td>						
+						
+						
+						
+						
+						
+						
+						
+							
+								<td>&nbsp;</td>
+							
+							
+						
+					</tr>				
+					
+							
+		</table>
+	</div>
+ 
+ 
+	<div class="paginacion">
+			
+		<span class="seleccionado" title="página actual">Página <strong>1 de 4</strong></span>		
+		
+			<a href="javascript:ir(2);" title="ir a la página siguiente" class="asiguiente"><img src="img/pag_siguiente.gif" alt="siguiente" /></a>
+			<a href="javascript:ir(4);" title="ir a la última página" class="aultima"><img src="img/pag_fin.gif" alt="fin" /></a>		
+		
+	</div>
+ 
+<div class="botonera">
+	
+	<input type="button" class="hand" value="Nueva búsqueda" onclick="javascript:irFiltro();"/>	
+	
+		
+			
+</div>
+ 
+<!-- <input type="hidden" name="tipoBusqueda" value=""/> <!-- No perdida del tipo de busqueda -->
+</form>		
+</div>
+<!-- Fin div listado de contenidos -->
+ 
+ 
+</div>
+<!-- Fin div de contenido -->
+</div>
+<!-- Fin div contenedor -->
+</body>
+</html>

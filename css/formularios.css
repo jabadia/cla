@@ -1,0 +1,415 @@
+.formulario_generico{
+	margin-bottom: .5em;
+	margin-top: 1em;
+}
+.formulario_generico form {
+	margin: 0;
+}
+.formulario_generico .texto, .formulario_generico .subir, .columna_contenido .formulario_generico h1, .formulario_generico .mensaje_aviso, .formulario_generico .herramientas {
+	margin-right: .9em;
+	width: auto;
+}
+.info_form p,.formulario_generidco p{
+	 color: #666666; font-size: .7em; 
+}
+.formulario_generico legend, .formulario_generico p.legend, .formulario_generico h2.legend {
+	font-family: arial;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #2C5766;
+	margin-bottom: .2em;
+    position: static;
+    margin-left: -0.55em;
+}
+/*al loro hay que controlar el caso de cuatro columnas*/
+.formulario_generico span.inlegend {display: block;width: 31em;margin: 0;}
+.subestructura3 .formulario_generico span.inlegend {width: 46.5em;}
+.columna1 .formulario_generico span.inlegend {width: 10.5em;}
+.formulario_generico p.legend, .formulario_generico h2.legend {
+	left: 0;
+}
+select, input, textarea {
+	font-size: .650em;
+	font-family: verdana;
+}
+
+input {
+	border: 1px solid #B5CAD1;
+	height: 1.26em;
+}
+input.imagen {
+	border: none;
+	height: auto;
+	margin-bottom: 0;
+	top: .9em;
+	position: relative; top: .4em;
+}
+
+input.imagenListado {
+	border: none;
+	height: 200px;
+	width: 200px;	
+}
+
+textarea {
+	border: 1px solid #B5CAD1;
+	height: 3.813em;
+	margin-bottom: .7em;
+}
+textarea.dobleA {
+	height: 7.6em;
+}
+textarea.tripleA {
+	height: 11.4em;
+}
+
+input.radio, input.checkbox, input.check {
+	border: none; display: inline; margin: 0; padding: 0;height: auto;
+}
+
+.formulario_generico .descripcion {
+	font-size: 0.688em;
+	margin: 0.625em 0 0.125em 0;
+	clear: both;
+}
+.formulario_generico fieldset {
+	clear: both;
+	margin: 0.938em 0 0 0;
+	border: none;
+	/*background: #f6f8f9;*/
+	background: #edf2f6;
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	
+}
+.formulario_generico fieldset fieldset {
+	margin: 0;
+	padding: 0;
+	clear: none;
+}
+.formulario_generico label, .formulario_generico p.label, .formulario_generico fieldset fieldset legend {
+	color: #2C5766;
+	font-family: verdana;
+	font-size: 0.675em;
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	text-align: left;
+}
+.formulario_generico label.radio, .formulario_generico label.checkbox {
+	display: inline;
+}
+.formulario_generico div.f {
+	width: 100%;
+	display: table;
+}
+.formulario_generico div.textarea {
+	min-height: 4em;
+}
+* html .formulario_generico div.textarea {
+	height: 4em;
+}
+.c05, .c1, .c2, .c3 {
+	margin: 0 0.605em 0 0;
+	display: table-row;
+	float: left;
+}
+.c1, .c2, .c3 {
+	min-height: 2.6em;
+}
+/** html .c05, * html .c1, * html .c2, * html .c3 {*/
+* html .c1, * html .c2, * html .c3 {
+	height: 2.65em;
+}
+.a2 {
+	min-height: 3.3em;
+}
+* html .a2 {
+	height: 3.3em;
+}
+.c4 {
+	width: 40em;
+}
+.c3 {
+	width: 34.8em;
+}
+.c3 input, input.i3 {
+	width: 53em;
+}
+.c3 select, select.i3 {
+	width: 53.25em;
+}
+.c3 textarea, textarea.i3 {
+	width: 53.1em;
+}
+.c2 {
+	width: 22.125em;
+}
+.c2 input, input.i2 {
+	width: 33.5em;
+}
+c2 select, select.i2 {
+	width: 34em;
+}
+.c2 textarea, textarea.i2 {
+	width: 33.5em;
+}
+
+.c1 {
+	width: 10.250em;
+}
+.c1 input, input.i1 {
+	width: 15.5em;
+}
+.c1 select, select.i1 {
+	width: 16em;
+}
+.c1 textarea, textarea.i1 {
+	width: 15.5em;
+}
+.c025 {
+	width: 2.5em;
+}
+
+.c05 {
+	margin-right: 0.938em;
+	width: 5em;
+}
+* html .c05 {
+	width: 4em;
+	padding: 0;
+	margin-right: .9em;
+
+}
+.c05 input,  input.i05 {
+	width: 7.45em;
+}
+.c05 select, select.i05 {
+	width: 7.1em;
+}
+.c1 .c05 {
+	width: 4.68em;
+	height: auto;min-height: 0em;
+}
+input.radio, input.checkbox {
+	width: auto;
+}
+.ultimoC, * html .ultimoC {
+	margin-right: 0;
+
+}
+input.boton {
+	width: auto;
+	float: right;
+	margin-top: .8em;
+	cursor: hand;
+}
+.botonera {
+	margin-top: .4em;
+	margin-bottom: .6em;
+	text-align: right;
+	clear: both;
+}
+.botonera a.boton {
+	font-weight:normal;
+	text-decoration:none;
+	font-size: .67em;
+	background-color: #85A3B2;
+	color: #FFFFFF;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	border: 1px solid #0C4765;
+	margin-right: 1em;
+}
+
+
+.botonera input, input.boton {
+	border: 1px solid #0C4765;
+	color: #FFFFFF;
+	background-color: #85A3B2;
+	font-size: .67em;
+	margin-right: 1em;
+	height: auto;
+	padding: 0 .8em 0 .8em;
+	overflow: visible;
+}
+
+.botonera input.ultimo {
+	margin-right: 0;
+}
+.columna_ficha .botonera {
+	margin-top: .3em;
+	padding-bottom: .3em;
+}
+.columna1 .botonera input.boton, .columna1 .botonera a.boton {
+	clear: both;
+	float: none;
+		margin-right: 0;
+}
+.botonera a.boton:hover {text-decoration: none;}
+.center {
+	text-align: center;
+}
+
+/*.columna_ficha .c01 {*/
+.c01 {
+	padding-top: 1em;
+	padding: .1em 0 .3em 1em;
+}
+.columna_ficha form {
+	margin: 0 0 .3em 0;
+}
+
+.columna_ficha form legend {
+	color: #2C5766;
+	font-family: verdana;
+	font-size: 0.65em;
+	font-weight: bold;
+	margin-left: .5em;
+	/*para ff*/
+	padding-left: 1.5em;
+}
+* html .columna_ficha form legend {
+	padding: 0;	
+}
+.columna_ficha form fieldset {
+	margin-top: 1em;
+	border: none;
+	padding: 0;
+}
+
+.columna_ficha label, .columna_ficha .multiple label, .columna_ficha .f_fecha label {
+	display: block;
+	color: #2C5766;
+	font-family: verdana;
+	font-size: 0.70em;	
+}
+
+.columna_ficha input {
+	width: 11.5em;
+}
+
+.columna_ficha .conicono input {
+	width: 11.5em;
+}
+.columna_ficha input.imagen {
+	width: 1.92em;
+	height: 1.64em;
+}
+.columna_ficha .botonera input {
+	width: auto;
+}
+.columna_ficha .botonera input.filtrar { width: 10em; cursor: pointer; }
+.columna_ficha select { width: 14.5em; }
+
+.formulario_distributiva form {
+	margin-top: .3em;
+}
+.formulario_distributiva .c01 {
+	padding: 0 0 .3em 0;
+}
+.formulario_distributiva h1 {
+	font-size: .7em;
+	color: #569DD3;
+	margin: .3em 0 0 0;
+	border: none;
+}
+.formulario_distributiva .avanzada {
+	text-align:right;
+	font-family: verdana;
+	font-size: 0.563em;
+	margin: 0.125em 4.813em 0 0.938em;
+}
+
+.formulario_distributiva a {
+	color: #2C5766;
+	text-decoration: none;
+}
+.formulario_distributiva a:hover {
+	color: #2C5766;
+	text-decoration: underline;
+}
+
+.formulario_distributiva label, .formulario_distributiva p.label {
+	color: #2C5766;
+	font-family: verdana;
+	font-size: 0.675em;
+	display: block;
+}
+.formulario_distributiva h1 label {
+	font-size: .95em;
+	font-family: arial;
+	color: #569DD3;
+}
+
+.formulario_distributiva div.c1 {
+	width: 9.8em;
+	margin-left: .5em;
+}
+.formulario_distributiva div.c2 {
+	width: 23.1em;
+	margin-left: .5em;
+}
+* html .formulario_distributiva div.c2 {
+	width: 23.125em;
+}
+.formulario_distributiva div.c1 input {
+	width: 95%;
+}
+.formulario_distributiva div.c1 select {
+	width: 90%;
+}
+.formulario_distributiva div.c1 input.boton {
+	width: auto;
+	float: right;
+	margin-top: .8em;
+}
+
+.multiple{
+	float: left;
+}
+
+.multiple, .inline, .f_fecha {
+	min-height: 1.6em;
+}
+* html .multiple, * html .inline, * html .f_fecha {
+	height: 1.6em;
+}
+.multiple label, .f_fecha label {
+	display: inline;
+}
+.multiple input, .f_fecha input {
+	width: 5.6em;
+	width: 6.6em;
+}
+.multiple a, .f_fecha a {
+	position: relative;
+	top: .25em;
+	left: .8em;
+}
+
+.multiple img, .f_fecha img {
+	position: relative;
+	top: .25em;
+	margin-left: .55em;
+}
+
+.multiple a img, .multiple .bdCalendarDiv a, .f_fecha a img, .f_fecha .bdCalendarDiv a {
+	position: static;
+	top: 0;
+	margin-left: 0;
+}
+
+label input {
+	font-size: 1em;
+}
+
+
+.hand{
+	cursor:hand;
+}
+.limpiar{
+	clear: both;
+}
+.linea {
+	display: inline;
+}
+

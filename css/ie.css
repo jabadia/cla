@@ -1,0 +1,101 @@
+#buscador { height: 3.16em;}
+* html #buscador { height:3.15em;}
+* html #pagina {height: 20.9em;}
+/*rejillas*/
+* html .columna1 {
+ width: 11.9em; width/**/:/**/11.250em;
+}
+* html .columna2 {
+width: 23.75em; width/**/:/**/23.125em;
+}
+* html .columna3 {
+width: 35.625em; width/**/:/**/35em;
+}
+* html .columna4 {
+width: 47.5em; width/**/:/**/46.875em;
+}
+* html .panel1 { height: 6.250em; }
+* html .panel2 { height: 13.125em; }
+* html .panel3, * html .panel { height: 20.000em; }
+* html .panel4 { height: 26.875em; }
+html * .adicional .anchura1 {padding-left: 0;border-left: .615em solid #FFFFFF;}
+html * .columna1 .adicional .portlet {border-left: none;}
+* html .ultimaColumna {padding-bottom: 0.438em;}
+* html .columna2, * html .columna3, * html .columna4 {padding-bottom: 0;}
+* html .subestructura21 { height: 20.9em; overflow: visible; }
+* html .subestructura31 { height: 20.000em; overflow: visible;}
+* html .subestructura3 { overflow: hidden; }
+* html .subestructdura4 {height: 13.125em;}
+* html .subestructura21 .columna_contenido {overflow: hidden;}
+* html .subestructura31 .columna_contenido {overflow: hidden;}
+#herramientas_div { margin-bottom: 0;}
+.portlet .portlet #herramientas_div {margin-bottom: 0}
+#herramientas_div input { height: 1.4em; cursor: hand; }
+
+.navegacion_calendario {width: 14.3em;}
+* html table.calendario {font-size: 0.8em;}
+* html .columna_contenido table.calendario {width: 12.65em;}
+
+.columna4 .mensaje_ventana, .subestructura31 .mensaje_ventana {width: 60%;}
+* html .columna4 .mensaje_ventana, * html .subestructura31 .mensaje_ventana {float:left; display: inline;}
+* html div.mensaje_aviso {
+ height: 1.4em;
+}
+.nueva_busqueda {margin-bottom:0em;}
+* html .nueva_busqueda {margin-bottom:0;top:.65em;}
+.grafica_barras dd {float:none}
+
+/*formularios.css*/
+.botonera a.boton { padding: 0.2em 0.8em 0.1em 0.8em; }
+.columna_ficha .botonera input.filtrar { cursor: hand; }
+.cuestionario .f_fecha a img.iconocalendario {position: relative;left: 0;top: -.2em;float: none; }
+.columna_ficha form legend {padding-left: 0;}
+
+* html .v-outer {
+#position: relative;
+}
+* html .v-middle {
+#position: absolute;
+#top: 100%;
+}
+* html .v-inner {
+#position: relative;
+#top: -100%;
+}
+
+
+.opcion_columna input.checkbox {margin: .1em 0 -.2em -.1em;height:1em;}
+.opciones_1cols  input.checkbox {margin: 0 0 -.2em -.1em;height:1.6em}
+
+
+/*login.css*/
+
+#login_form input#botonEntrar{margin:0.5em 7.8em 0 0;}
+#login_form .botonLogin input#botonEntrar {margin:0;}
+
+/*amiayre*/
+.columna2 .estado_normal {overflow: hidden;}
+.estado_maximizado {overflow: hidden;}
+.estado_normal .formulario_amiayre ol { overflow: hidden; }
+.formulario_amiayre fieldset .botonera { margin-left: .6em; }
+#formulario_anadir_div legend {background-position: 0 .3em;padding-bottom: .2em;}
+#formulario_anadir_div div.opcionServicio p {margin-left: 2.2em;}
+#formulario_anadir_enlace .cA2 {margin-left: .5em;margin-bottom: .8em}
+* html #formulario_anadir_enlace .cA2 {margin-bottom: 0}
+.formulario_generico .c3 label.LC1 {width: 16.4em;}
+.formulario_generico .c3 input.LC2 {margin-left: .9em;width: 34.8em;}
+.formulario_generico .c3 input.file {width: 35.2em;}
+.formulario_generico .c3 select.LC2 {width: 35.2em;margin-left: .9em;}
+
+h3.tituloAnuncio .numeroAnuncio {
+ padding-right: .5em;
+}
+
+/*foros*/
+.botoneraForo .izq a{top:-.2em;}
+.botoneraForo fieldset {top:0;}
+@media print {
+ .listado_contenidos ul li.foto, .listado_coleccion ul li.foto {height: auto;}
+ * html .panel1, * html .panel2, * html .panel3, * html .panel4 {float: none;width: 100%;height: auto;}
+}
+

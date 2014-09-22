@@ -1,0 +1,989 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es" style="overflow-x:hidden;">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<head>
+<title>AYRE - Intranet del Ayuntamiento de Madrid</title>
+<!-- meter el href del base en la sesión -->
+<!-- base href="http://localhost:9080/webCLA/"/ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/principal.css" type="text/css" />
+<link rel="stylesheet" href="css/formularios.css" type="text/css" />
+<link rel="stylesheet" href="css/aplicaciones.css" type="text/css" />
+<link rel="stylesheet" href="css/autocomplete.css" type="text/css" />
+<link rel="stylesheet" href="css/impresion.css" type="text/css"	media="print" />
+<!--[if IE ]>
+	<link rel="stylesheet" href="css/ie.css" />
+<![endif]-->
+ 
+ 
+ 
+ 
+<script> 
+ 
+var OPER_DIVIDIR = "dividir";
+ 
+var AUDIT_OPE_UNIR_FIN = "UNF";
+ 
+var ACCESO_EXT_CONSULTA = "CONSULTA";
+ 
+var ACCEX_ROLDATOS = "ACCEX_ROLDATOS";
+ 
+var MENU_GE_AGRUPACIONES = "AG";
+ 
+var AUDIT_PERFIL = "PAC";
+ 
+var SECC_DATOS_INTERNA_PREFIX = "SDI";
+ 
+var ACTIVIDAD_MOTIVO_ALTA = "Alta actividad desde la Web";
+ 
+var TIPO_EXP_CCO = "1";
+ 
+var MAX_HASTA = "10000";
+ 
+var BDC_ERROR_NUMAPP = "NUMAPP_NO_VALIDO";
+ 
+var ID_LOCAL_MAX_MIGCLAI = "270524237";
+ 
+var MIN_DESDE = "0";
+ 
+var ES_LOCAL = "L";
+ 
+var ACCEX_TIPEX_INT_OPC = "ACCESO.EXTERNO.TIPEX.INT.OPC";
+ 
+var SECUENCIAL_INCREMENTO = "10";
+ 
+var ENTIDAD_SIGMA_AGRUPACION = "A";
+ 
+var TIPO_SUJETO_COMUNIDAD_PROP = "3";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_SIN_ID = "285000000";
+ 
+var TRUE = "true";
+ 
+var AUDIT_CENSO_HISTORICO = "CCH";
+ 
+var SIT_LOCAL_BAJA = "8";
+ 
+var ENTIDAD_SIGMA_LOCAL = "L";
+ 
+var BDC_ERROR_DIR = "DIR_NO_VALIDA";
+ 
+var SECC_DATOS_DATEP = "DATEP";
+ 
+var DIR_VARIAS_COINCIDENCIAS = "-4";
+ 
+var ROL_DATOS_ACCESO_GIS = "ROLDATOS_ACCESO_GIS";
+ 
+var BDC_ERROR_NN = "NO_NORMALIZADA";
+ 
+var OPER_REUNIFICAR = "reunificar";
+ 
+var BDC_CLSDIRECCION_CAM = "2";
+ 
+var TABLA_CLASES = "OBCLAS";
+ 
+var SECC_DATOS_INTERNAS = "ACAL#INAL#INMO#ACMO";
+ 
+var BDC_PROVINCIA_COD = "28";
+ 
+var URL_CENSO_HISTORICO = "URL.CENSO.HISTORICO";
+ 
+var DIR_NO_VALIDA = "-1";
+ 
+var ID_LOCAL_INICIAL = "1";
+ 
+var TABLA_EPIGRAFE = "EPIACT";
+ 
+var AUDIT_OPE_DIVIDIR_INI = "DVI";
+ 
+var ESTADO_DATOS_VALIDADO = "2";
+ 
+var EPIGRAFE_GRAL1 = "PTECO1";
+ 
+var EPIGRAFE_GRAL2 = "PTECO2";
+ 
+var SECUENCIAL_NO_VALIDO = "-1";
+ 
+var BDC_ERROR_VARIOS_REG = "VARIOS_REG";
+ 
+var OP_GES_LICENCIAS = "gesLicencias";
+ 
+var SISTEMA_PLATEA = "PLATEA";
+ 
+var TIPO_DIRECCION_NOTIFICACION = "Notificacion";
+ 
+var EPIGRAFES_TERRAZAS_VELADORES = "EPIS_TERRAZAS";
+ 
+var DISTRITO_REGULARIZADO = "DIS_REGULARIZADO";
+ 
+var APLICACION_REG_WCLA = "WCLA";
+ 
+var LOCAL_NULO_AGRUPADO = "0";
+ 
+var TABLA_TIPPER = "TIPINP";
+ 
+var TIPO_SUJETO_FISICO = "2";
+ 
+var AUDIT_OPE_DESHACER = "DES";
+ 
+var BDC_CODLOCAL = "0";
+ 
+var SIT_ACTIVIDAD_CESADA = "21";
+ 
+var EP_WS_GIS = "ENDPOINT.CLIENTE.WSGIS";
+ 
+var LOCAL_SI_AGRUPADO = "1";
+ 
+var OP_MODIFICACION = "modificacion";
+ 
+var ACCEX_MENUS_CONSULTA = "18";
+ 
+var TABLA_TIPO = "OBTIPO";
+ 
+var DIR_NO_VALIDA_NUMAPP = "-7";
+ 
+var SELECCIONE = "-1";
+ 
+var TIPO_INTERIOR = "3";
+ 
+var NO_INT_SELECCIONADO = "-1";
+ 
+var FALSE = "false";
+ 
+var MOT_REL_REUNIFICAR = "1";
+ 
+var SIZE_CODIGO_LOCAL = "10";
+ 
+var SECC_DATOS_INOP = "SDIINOP";
+ 
+var TIPO_NUM = "NUM";
+ 
+var MOT_REL_DIVISION = "3";
+ 
+var OP_OPERACION = "operacion";
+ 
+var SECC_DATOS_INAL = "SDIINAL";
+ 
+var SECC_DATOS_ESTDA = "ESTDA";
+ 
+var USU_CARGA_INICIAL = "MIGCLAI";
+ 
+var ESTADO_VIGENCIA_ACTIVO = "1";
+ 
+var TABLA_USOS = "OBUSOS";
+ 
+var EP_WS_CENSOHISTORICO = "ENDPOINT.CLIENTE.WSCENSOHISTORICO";
+ 
+var TIPO_PERIODO_TERRAZA_ESTACIONAL = "EST";
+ 
+var SIT_LOCAL_ABIERTO = "1";
+ 
+var AUDIT_ROL = "RDT";
+ 
+var AGRUPACION_VIGENTE = "VIGENTE";
+ 
+var TABLA_TIPDOC = "TIPDOC";
+ 
+var TIPO_INSTA_CERRAMIENTO = "3";
+ 
+var ACTIVIDAD_MOTIVO_ACTUALIZAR = "Modificacion de la actividad desde la Web";
+ 
+var BUSCAR_CUALQUIER_ACCESO = "0";
+ 
+var AUDIT_ALTA = "ALT";
+ 
+var TIPO_KM = "KM.";
+ 
+var AUDIT_ACTIVIDAD = "ACT";
+ 
+var OPER_DESH_OPERACION = "deshacerOperacion";
+ 
+var EP_UWEB = "UWEB.ENDPOINT";
+ 
+var SIT_LOCAL_CERRADO = "4";
+ 
+var SECC_DATOS_ACAL = "SDIACAL";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO = "280000000";
+ 
+var BDC_ERROR_GENERICO = "BDC_ERROR_GENERICO";
+ 
+var AREA_AGRUPACION = "AGRUPACION";
+ 
+var ACCESO_EXT_PERFIL_ACTUA = "GESTR";
+ 
+var CE_ERROR = "error";
+ 
+var MENU_GE_ADMINISTRACION = "AD";
+ 
+var ES_POSICION_MODIF = "M";
+ 
+var ACCESO_EXT_ALTA = "ALTA";
+ 
+var SUJETO_EXISTENTE_ADVERTIR = "S_A";
+ 
+var OP_ACTIVIDAD = "actividad";
+ 
+var PREFIJO_PISCINA = "PISCINA";
+ 
+var TIPO_PERIODO_TERRAZA_ANUAL = "ANU";
+ 
+var ACCEX_SECC_DATOS_ALTA = "SALUD#HORAR#URBAN#SEGUR";
+ 
+var AGRUPACION_NULA = "99000000";
+ 
+var DIR_NO_VALIDA_VIARIO_NACION = "-6";
+ 
+var SIT_LOCAL_BAJA_PCA = "10";
+ 
+var PERFIL_ACTUA_PERSON = "PERSO";
+ 
+var AUX_APROX_POSTAL_TIPO_NUMERACION = "1";
+ 
+var SECUENCIAL_INICIAL = "1000";
+ 
+var SECC_DATOS_IDENT = "IDENT";
+ 
+var SECC_DATOS_SALUD = "SALUD";
+ 
+var BUSCAR_SOLO_EDIFICIO = "1";
+ 
+var BUSCAR_SOLO_PRINCIPAL = "2";
+ 
+var PREFIJO_EDIFICIO = "EDIFICIO";
+ 
+var USU_TRAJAJO_CAMPO = "MTCCLAI";
+ 
+var DIR_NO_NORMAL = "-3";
+ 
+var PETIC_POSIC_PENDTE_CON_ERROR = "1";
+ 
+var URL_SIGMA = "URL.SIGMA";
+ 
+var AUX_APROX_POSTAL_TIPO_LOCAL = "2";
+ 
+var SECC_DATOS_HORAR = "HORAR";
+ 
+var CE_INFORMACION = "informacion";
+ 
+var KEY_VACIO = "";
+ 
+var BDC_CIUDAD_COD = "54953";
+ 
+var BDC_CLSDIRECCION = "1";
+ 
+var EP_WS_CENSO = "ENDPOINT.CLIENTE.WSCENSO";
+ 
+var LOCAL_MOTIVO_BAJA_AGRUPACION = "BAJA AGRUPACION";
+ 
+var LOCAL_MERCADILLO = "4";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_ESTAD = "290000000";
+ 
+var PREFIJO_SITUADO_AISLADO = "SITUADO";
+ 
+var CE_CONFIRMACION = "confirmacion";
+ 
+var TIPOS_ACCESO_DIS_REG = "TIPOS_ACCESO_DIS_REG";
+ 
+var BDC_ERROR_VIARIO_NACION = "VIARIO_NAC_NO_VALIDO";
+ 
+var LOCAL_OTRO_SITUADO = "3";
+ 
+var OP_SIGMA_BAJA = "baja";
+ 
+var TIPO_DIRECCION_FISCAL = "Fiscal";
+ 
+var MENU_GE_LOCALES = "LC";
+ 
+var AUDIT_OPE_REUNIFICAR_FIN = "RUF";
+ 
+var AUDIT_OPE_UNIR_INI = "UNI";
+ 
+var SECC_DATOS_ACMO = "SDIACMO";
+ 
+var SECC_DATOS_INMO = "SDIINMO";
+ 
+var MAX_ID_LOCAL_OLD = "MAX_ID_LOCAL_OLD";
+ 
+var TIPO_EXP_TRC = "0";
+ 
+var ACCESO_UNICO = "-1";
+ 
+var PREFIJO_MERCADILLO = "MERCADILLO";
+ 
+var AUDIT_INTERESADO = "INT";
+ 
+var SUJETO_EXISTENTE_NO_GRABAR = "S_NG";
+ 
+var USUARIO_SESION = "USUARIO_SESION";
+ 
+var OPER_UNIR = "unir";
+ 
+var CE_ADVERTENCIA = "advertencia";
+ 
+var TIPO_PISCINA = "10";
+ 
+var TABLA_CATEGORIA = "OBCATE";
+ 
+var REPRESENTACION_PLANO = "P";
+ 
+var BUSCAR_CUALQUIER_ACCESO_VIGENTE = "3";
+ 
+var BUSCAR_CUALQUIER_ACCESO_NOVIGENTE = "4";
+ 
+var PREFIJO_SOLAR = "SOLAR";
+ 
+var SECUENCIAL_VALIDO = "0";
+ 
+var DIR_ERROR_BDC = "-5";
+ 
+var SEPARADOR = "#";
+ 
+var WCLA_NOCONTROL_DIRNN = "DIRNN_NOCONTROL";
+ 
+var AUDIT_AGRUPACION = "AGR";
+ 
+var SIT_LOCAL_BAJA_REUNIFICACION = "9";
+ 
+var MOT_REL_UNION = "2";
+ 
+var ESTADO_VIGENCIA_NOACTIVO = "2";
+ 
+var AUDIT_MODIF = "MOD";
+ 
+var ACTIVIDAD_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var LOCAL_MOTIVO_BAJA = "BAJA";
+ 
+var SELECT_TIPOVIA_BDC = "CALLE                   ";
+ 
+var LOCAL_NO_AGRUPADO = "2";
+ 
+var PREFIJO_MERCADILLO_RASTRO = "RASTRO";
+ 
+var TIPO_EDIFICIO_SINDEFINIR = "5";
+ 
+var CARPETA_PLANTILLAS_INFORMES = "/plantillaInformes/";
+ 
+var SECUENCIAL_REPETIDO = "-2";
+ 
+var ACCEX_MENUS_ALTA = "2#15";
+ 
+var NO_STRING_SELECCIONADO = "-1";
+ 
+var SECC_DATOS_GPCA = "GPCA";
+ 
+var AUDIT_CONSULTA = "CON";
+ 
+var LOCAL_MOTIVO_ALTA = "ALTA";
+ 
+var RESULTADOS_POR_PAGINA = "10";
+ 
+var ACCESO_EXT_MODIFICAR = "MODIFICAR";
+ 
+var TIPO_PUERTA_CALLE = "1";
+ 
+var TIPO_AGR_NO_SIGMA = "TIPO_AGR_NO_SIGMA";
+ 
+var BAJA_AGRUPACION = "1";
+ 
+var AREA_ACTIVIDAD = "ACTIVIDAD";
+ 
+var TABLA_LETRA = "LETEST";
+ 
+var BDC_CIUDAD = "MADRID";
+ 
+var URL_ENTIDAD_SIGSA = "URL.ENTIDAD.SIGSA";
+ 
+var BDC_ERROR_VIA = "VIA_NO_VALIDA";
+ 
+var DIRECCION_LONG_MAXIMA = "39";
+ 
+var AUDIT_USUARIO = "USU";
+ 
+var SIZE_NDP = "8";
+ 
+var ESTADO_DATOS_HISTORICO = "4";
+ 
+var LOCAL_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var TIPO_SUJETO_JURIDICO = "1";
+ 
+var ROLDATOS_ACEGI = "ROLDATOS_ACEGI";
+ 
+var DISTRITO_DIR_NN_MER_RASTRO = "CENTRO";
+ 
+var ESTADO_DATOS_PROVISIONAL_CARGA = "3";
+ 
+var TIPO_EXP_ELU = "2";
+ 
+var SECC_DATOS_URBAN = "URBAN";
+ 
+var PETIC_POSIC_PENDTE_SIN_TRATAR = "0";
+ 
+var TIPO_MERCADILLO_RASTRO = "7";
+ 
+var TIPO_SOLAR = "8";
+ 
+var SECC_DATOS_SEGUR = "SEGUR";
+ 
+var AGRUPACION_NO_VIGENTE = "NO VIGENTE";
+ 
+var RESULTADOS_AJAX = "30";
+ 
+var BDC_PROVINCIA = "MADRID";
+ 
+var SECC_DATOS_INCARTO = "SDICARTO";
+ 
+var ESTADO_DATOS_PENDIENTE_VALIDACION = "1";
+ 
+var PREFIJO_CTF = "CENTRO TRANSF.";
+ 
+var MARCO_CENSO = "15";
+ 
+var ID_LOCAL_MIN_MTCCLAI = "280000000";
+ 
+var TIPO_DIRECCION_NOTIFICACION_ACTIVIDAD = "NotifiActividad";
+ 
+var TIPO_SN = "S/N";
+ 
+var LOCAL_MOTIVO_MODIF = "MODIFICACION";
+ 
+var TIPO_EDIFICIO = "9";
+ 
+var BDC_CLSDIRECCION_NN = "9";
+ 
+var TIPO_MERCADILLO = "5";
+ 
+var AREA_LOCAL = "LOCAL";
+ 
+var SECC_DATOS_GECAR = "GECAR";
+ 
+var AREA_INTERESADOS = "INTERESADOS";
+ 
+var SIT_PREFIJO_BAJA = "Baja";
+ 
+var MENU_GE_INTERESADOS = "IN";
+ 
+var MENU_GE_ACTIVIDADES = "AC";
+ 
+var TIPO_AGRUPADO = "0";
+ 
+var DIR_NO_NORMAL_NO_PERMITIDA = "-8";
+ 
+var OP_CONSULTA = "consulta";
+ 
+var ESTADO_VIGENCIA_AMBOS = "0";
+ 
+var EP_WS_INTERESADOS = "ENDPOINT.CLIENTE.WSINTERESADOS";
+ 
+var ES_AGRUPACION = "A";
+ 
+var SECC_DATOS_SELEP = "SELEP";
+ 
+var BDC_PAIS = "ESPAÑA";
+ 
+var TIPO_SITUADO_AISLADO = "4";
+ 
+var AUDIT_OPE_REUNIFICAR_INI = "RUI";
+ 
+var TIPO_SUJETO_ORGANISMO = "4";
+ 
+var DIR_NO_VALIDA_NN = "-2";
+ 
+var AUDIT_BAJA = "BAJ";
+ 
+var SIT_ACTIVIDAD_ABIERTA = "20";
+ 
+var SECC_DATOS_CONTR = "CONTR";
+ 
+var APLICACION_AC_WCLA_SIGSA = "AC_SIGSA";
+ 
+var FORMAT_NOM_CLASE_BDC = "%1$-24S";
+ 
+var AUDIT_LOCAL = "LOC";
+ 
+var TIPO_OTRO_SITUADO = "6";
+ 
+var TIPO_PCA = "12";
+ 
+var AUDIT_OPE_DIVIDIR_FIN = "DVF";
+ 
+var REPRESENTACION_EDIFICO = "E";
+ 
+var SECC_DATOS_DETEP = "DETEP";
+ 
+var TIPO_CTF = "11";
+ 
+var ES_POSICION_BAJA = "B";
+ 
+var ES_POSICION_ALTA = "A";
+ 
+var TIPO_EXP_ELF = "3";
+ 
+var EP_WS_ECLUS = "ENDPOINT.CLIENTE.WSECLUS";
+ 
+var ACCEX_PERFILACTUA = "ACCEX_PERFILACTUA";
+ 
+</script>
+ 
+ 
+<script src="js/general.js" type="text/javascript"></script>
+<script src="js/generalCenso.js" type="text/javascript"></script>
+<script src="js/local.js" type="text/javascript"></script>
+<script src="js/prototype-1.3.1.js" type="text/javascript"></script>
+<script src="js/ajaxtags-1.1.5.js" type="text/javascript"></script>
+</head>
+ 
+<body>
+ 
+<script> 
+	 document.onkeyup=function()
+	 {
+		if(event.keyCode == 13)
+		{
+			irListado('');
+		}
+	 }
+	 
+</script>
+ 
+ 
+ 
+<!-- Inicio div contenedor -->
+<div id="contenedor">
+	<!-- Inicio div de contenido -->
+	<div id="contenido">
+	<h3>Consulta de datos de local</h3>
+	<!-- Ini Area errores -->
+	
+	<!-- Fin area errores -->
+				
+	<!-- Inicio div secciones -->
+	<div class="nav_pasos">
+		<span id="menuDatosActuales" class="seleccionado" onclick="javascript:verDatosActuales();">Datos actuales</span>
+		<span>|</span> 
+		<span  id="menuDatosHistoricos" class="hand" onclick="javascript:verDatosHistoricos();">Datos históricos</span>
+	</div>
+	<!-- Fin div secciones -->
+	
+	<div class="formulario_generico">
+	<form name="localForm" method="post" action="/WCLA/consultaLocal.do">
+	
+	<fieldset><legend>Datos Generales</legend>
+ 
+		 <div  class="c05" style="HEIGHT: 2.65em; ">
+		 	<label for="codigoInterno">Id. Local</label>
+		 	<input type="text" name="local.id" maxlength="10" value="280012039" readonly="readonly" id="id">
+		 </div>
+		 <div  class="c05">
+		 	<label for="NDP">NDP</label>
+		 	<input type="text" name="local.NDP" maxlength="8" value="20006648" readonly="readonly" id="NDP">
+		 </div>
+		<!-- aislado o interior no debería mostrar nada -->
+		
+		
+		
+		
+		
+		
+		 	
+		 	<div  class="c05">
+			 	<label for="secuencial">Nº Local</label>
+		 		<input type="text" name="local.secuencial" value="10" readonly="readonly" id="secuencial">
+		 	</div>
+		 	
+		 	
+		 	
+		 	
+		 			 	
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 <!-- Icono de carga inicial -->
+		 
+		 
+		 <!-- Icono acceso censo historico -->
+		 
+		
+		 <!-- Icono generar cartel -->
+		 
+		
+		
+		
+		 
+		 <div class="c05" style="width:1em;">
+			<div align="center">
+				<img class="icono hand" style="margin-left:0.8em;" width="190%" height="190%" src="img/iconos/pdf.gif" alt="Generacion cartel local" onclick="javascript:generarCartelLocal(280012039);" />
+			</div>
+		 </div>	
+		 
+		
+		  
+		 	 
+		 	  
+		 
+		 <!-- Icono local PC con locales asociados [ABR2012 / PCS] -->
+		 
+		 
+  		 <br class="limpiar"/>
+  		 
+  		 <div  class="c3">
+		 	<label for="dirEdificio">Dirección del edificio en el que se ubica el local</label>
+		 	
+				<input type="text" name="local.dirBDC.aproxPostalPrimera" value="CALLE ALCALA,  1" readonly="readonly" id="aproxPostalPrimera">
+			
+		 </div>
+  		 
+  		 <br class="limpiar"/>
+		 <div class="c1">
+			<label	for="estado">Estado datos</label>
+			
+				<input type="text" name="local.estado.nombre" value="Definitivo" readonly="readonly" id="estado">
+			
+		 </div>
+				 
+		 <div class="c1">
+			 <label	for="situacion">Situación local</label>
+			 		 	
+			 	
+				
+				<input type="text" name="local.situacion.nombre" value="Abierto" readonly="readonly" id="situacion">
+				
+			
+		 </div>
+		 				 					 
+	     <div class="c1" style="width:12em;">
+			  <label for="tipoEdificio">Tipo edificio</label> 
+			  
+				<input type="text" name="local.tipoEdificio.nombre" value="Edificio uso exclusivo" readonly="readonly" id="tipoEdificio" style="width:18em;">
+			
+		 </div>		 		 
+		 <div class="c1">
+			 <label for="tipoAcceso">Tipo acceso</label>
+			 
+				<input type="text" name="local.tipoAcceso.nombre" value="Puerta Calle" readonly="readonly" id="tipoAcceso">
+			
+		 </div>
+		 
+		 <br class="limpiar"/>
+		 
+		 <div class="c1"  style="width:12em;">
+			 <label	for="referenciaCatastral">Referencia catastral</label>
+			<input type="text" name="local.refCatastral" value="" readonly="readonly" id="refCatastral" style="width:18em;">
+		 </div>
+ 
+		 <div class="c05">
+			<label for="superficieTotal">M2 totales</label> 
+			<input type="text" name="local.supTotal" value="0" readonly="readonly" id="supTotal">
+		 </div>
+		<div class="c05">
+			<label for="superficieUtil">M2 útiles</label>
+			<input type="text" name="local.supUtil" value="0" readonly="readonly" id="supUtil">
+		 </div>				
+		
+		<div class="c05">
+			<label for="Agrupado">Agrupado</label>
+		    
+		   	
+			   	<input type="text" value="No"readonly="true" /> 
+		   			   
+		</div>	
+		<div class="c05">
+			<label for="Documentos">Documentos</label>
+			
+			
+			<div align="center">
+				<img src="img/iconos/mal.GIF" class="icono" alt="Sin documentos"/>
+			</div>			
+			
+		</div>
+		
+		<div class="c05" style="width:3em;">
+			<label for="Plano">Plano</label>
+			
+			<div align="left">
+				<img class="icono hand" style="margin-left:0.5em;" src="img/lupaform.gif" alt="Plano" onclick='javascript:consultaSigma("L","280012039","20006648")'/>
+			</div>
+			
+			
+		</div>
+		
+		
+ 
+		<div class="c05">
+			<label for="verEdi">&nbsp;</label>
+			<div class="botonera" style="margin-top:0px; margin-bottom:0px;">
+			<input type="button" class="hand" style="border: 1px solid #0C4765;background-color: #FFFFFF;color: #85A3B2;margin-right: 0px; TEXT-ALIGN: center; margin-top:0px;" value="Ver Edificio" onclick="verEdificioLocal(20006648);"/>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Local PCA [ABR2012 / PCS] -->
+		
+		
+				
+		<br class="limpiar"/>
+		
+		
+		<div class="texto">
+			<legend style="font-size: 11px">Accesos</legend>
+					
+			
+			<table id="tablaAccesos" width="100%" cellspacing="0" cellpadding="0" summary="Accesos">			
+			<caption>Ubicaciones</caption>
+				<tr>
+					<th style="width:5px">Ppal.</th>
+					<th style="width:70px">NDP</th>
+					<th>Calle</th>
+					<th style="width:50px">Tipo Nº</th>
+					<th style="width:50px">Nº</th>
+					<th style="width:50px">Calif.</th>					
+					
+					<th style="width:50px">Escalera</th>
+					
+					<th style="width:50px">Planta</th>
+					
+					
+					<th style="width:50px">Puerta</th>
+					
+				</tr>
+				
+					<tr class="par">				
+						<td>
+							
+								<input type="radio" class="radio" id="accesoPrincipal" checked="checked" readonly="readonly"/>
+							
+							
+						</td>
+						<td>20006648</td>			
+						
+							<td>CALLE&nbsp;ALCALA</td> 
+							<td>&nbsp;NUM</td>	
+							<td>&nbsp;1</td>	
+							<td>&nbsp;  </td> 
+							
+							<td>&nbsp;</td>
+							
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>										
+							
+					</tr>	
+						
+			</table>
+			 
+			
+		</div>	
+		<div class="texto" id="historicoAccLocal" style="display:none">
+			<legend style="font-size: 11px">Hist&oacute;rico de Accesos</legend>
+			<table id="tablaHistoricoAccesos" width="100%" cellspacing="0" cellpadding="0" summary="Historico de accesos">
+			<caption>Accesos históricos</caption>
+				<tr>
+					<th style="width:70px">NDP</th>
+					<th>Calle</th>
+					<th style="width:50px">Nº</th>
+					<th style="width:40px">Calif.</th>
+					
+					<th style="width:40px">Esc</th>
+					
+					<th style="width:40px">Plt</th>
+					
+					<th style="width:40px">Pta</th>
+					
+					
+					<th style="width:80px">Fx Alta</th>
+					<th style="width:80px">Fx Baja</th>
+				</tr>
+								
+			</table>
+			<div align="right">
+				<a href="#" onclick="verHistoricoAccLocal(false)"><img  class="icono hand" alt="Ocultar histórico" src="img/iconos/documento.gif"/><span class="texto"> Ocultar</span></a>
+			</div>	
+		</div>
+			
+	</fieldset>
+	<div class="formulario_generico" id="listaHistoricos" style="display:none;">
+	<!-- form action="" method="post" -->
+		<fieldset><legend>Modificaciones del local</legend>				 
+		 <div  class="c4">
+				<input name="tipo" class="radio" type="radio" id="tipo1" value="1" onclick="javascript:cambioHistorico(1);" checked="checked"/>
+				<label class="radio" for="tipo">Datos</label>
+				<input name="tipo" class="radio" type="radio" id="tipo2" value="2" onclick="javascript:cambioHistorico(2);"/>
+				<label class="radio" for="union">Situación</label>		
+				<input name="tipo" class="radio" type="radio" id="tipo4" value="3" onclick="javascript:cambioHistorico(3);"/>
+				<label class="radio" for="union">Estado</label>										
+				<input name="tipo" class="radio" type="radio" id="tipo5" value="4" onclick="javascript:cambioHistorico(4);"/>
+				<label class="radio" for="tipo">Relaciones entre locales</label>
+				<input name="tipo" class="radio" type="radio" id="tipo0" value="0" onclick="javascript:cambioHistorico(0);"/>
+				<label class="radio" for="tipo">Ver todos</label>
+		 </div>						
+		</fieldset>
+		<div id="datosH">
+			<fieldset>
+				<legend>Modificaciones de datos del local</legend>		
+				<div class="texto">
+					<table width="100%" cellspacing="0" cellpadding="0" summary="datosH">
+					<caption>Cambios</caption>
+					<tr>				
+						<th>Fechas vigencia datos</th>							
+						<th>Usuario modificación</th>	
+						<th>Sistema modificación</th>
+ 
+						<th>&nbsp;</th>																	
+					</tr>
+							
+					
+						<tr class="impar"><td colspan="4">No se han producido cambios en los datos del local</td>
+						</tr>
+								
+					</table>								
+			</div>			
+			</fieldset>						
+		</div>
+		<div id="situacionH" style="display:none">
+			<fieldset>
+				<legend>Modificaciones de situación para el local</legend>		
+				<div class="texto">
+					<table width="100%" cellspacing="0" cellpadding="0" summary="situacionH">
+					<caption>Cambios</caption>
+					<tr>	
+						<th>Situación</th>			
+						<th>Motivo</th>	
+						<th>Fecha cambio situación</th>							
+						<th>Usuario cambio</th>																		
+						<th>Sistema cambio</th>
+					</tr>
+					
+						
+							<tr class="impar centrado">	
+								<td>Abierto</td>	
+								<td>ALTA</td>													
+								<td>10-05-2011 15:16:19</td>							
+								<td>MTCCLAI</td>				
+								<td>MTCCLAI</td>																		
+							</tr>	
+							
+							
+											
+					</table>								
+			</div>			
+			</fieldset>						
+		</div>
+		<div id="estadoH" style="display:none">
+			<fieldset>
+				<legend>Modificaciones de estado de los datos para el local</legend>		
+				<div class="texto">
+					<table width="100%" cellspacing="0" cellpadding="0" summary="estadoH">
+					<caption>Cambios</caption>
+					<tr>	
+						<th>Estado datos</th>	
+						<th>Motivo</th>			
+						<th>Fecha cambio estado</th>							
+						<th>Usuario estado</th>								
+						<th>Sistema cambio</th>																
+					</tr>
+					
+						
+							<tr class="impar centrado">	
+								<td>Definitivo</td>		
+								<td>ALTA</td>												
+								<td>10-05-2011 15:16:19</td>							
+								<td>MTCCLAI</td>								
+								<td>MTCCLAI</td>																						
+							</tr>	
+							
+						
+													
+					</table>								
+			</div>			
+			</fieldset>						
+		</div>					
+		<div id="relacionLocales" style="display:none">
+			<fieldset>
+				<legend>Relaciones registradas en el local</legend>		
+				<div class="texto">
+					<!-- 
+					
+						<div align="left" class="c4">&nbsp;&nbsp;&nbsp;&nbsp;No existen relaciones en las que el local haya participado</div>
+					
+						
+					 -->	
+					
+					<!-- INI. NUEVA CONSULTA DE RELACIONES -->
+					<legend style="font-size: 11px">Locales anteriores o que generan local consultado</legend>
+					
+						<div align="left" class="c4">&nbsp;&nbsp;&nbsp;&nbsp;No existen locales anteriores asociados al consultado</div>
+					
+							
+					
+					<br class="limpiar"/>
+					
+					<legend style="font-size: 11px">Locales posteriores o generados por local consultado</legend>
+					
+						<div align="left" class="c4">&nbsp;&nbsp;&nbsp;&nbsp;No existen locales posteriores asociados al consultado</div>					
+					
+					
+					<!-- FIN. NUEVA CONSULTA DE RELACIONES -->			
+				</div>			
+			</fieldset>						
+		</div>	
+		</div>
+		<div class="botonera">
+		
+			
+				<input class="hand" type="button" value="Consultar Actividad" onclick="javascript:irConsultaActividadLocal(203290,'');" />
+			
+			<input class="hand" type="button" value="Volver resultado búsqueda" onclick="javascript:irListado('');"/>
+			<input class="hand" type="button" value="Nueva búsqueda" onclick="javascript:irFiltro();"/>
+		
+		
+		</div>
+	</div>	
+	<!-- /form -->
+ 
+		
+	</form>
+	</div>
+	<!--  <iframe id="consultaHistorico" width="100%" height="100%" scrolling="no" frameborder="0" style="display:none;"></iframe>	 -->
+</div>
+<!-- Fin div de contenido -->
+</div>
+<!-- Fin div contenedor -->
+</body>
+<script> 
+function mostrarRelac(name,indice){
+	var idVer = name + indice;
+	document.getElementById(idVer).style.display="block";
+	
+	var idOcultar = "";
+	if (name == 'desplegarA'){
+		idOcultar = 'plegarA' + indice;
+	}else if (name == 'plegarA'){
+		idOcultar = 'desplegarA' + indice;
+	}else if (name == 'desplegarP'){
+		idOcultar = 'plegarP' + indice;
+	}else if (name == 'plegarP'){
+		idOcultar = 'desplegarP' + indice;
+	}
+	document.getElementById(idOcultar).style.display="none";
+}
+</script>
+</html>
+ 
+ 

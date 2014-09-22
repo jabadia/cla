@@ -1,0 +1,1171 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es" style="overflow-x:hidden;">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<head>
+<title>AYRE - Intranet del Ayuntamiento de Madrid</title>
+<!-- meter el href del base en la sesión -->
+<!-- base href="http://localhost:9080/webCLA/"/ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/principal.css" type="text/css" />
+<link rel="stylesheet" href="css/formularios.css" type="text/css" />
+<link rel="stylesheet" href="css/aplicaciones.css" type="text/css" />
+<link rel="stylesheet" href="css/autocomplete.css" type="text/css" />
+<link rel="stylesheet" href="css/impresion.css" type="text/css"	media="print" />
+<!--[if IE ]>
+	<link rel="stylesheet" href="css/ie.css" />
+<![endif]-->
+ 
+ 
+ 
+ 
+<script> 
+ 
+var OPER_DIVIDIR = "dividir";
+ 
+var AUDIT_OPE_UNIR_FIN = "UNF";
+ 
+var ACCESO_EXT_CONSULTA = "CONSULTA";
+ 
+var ACCEX_ROLDATOS = "ACCEX_ROLDATOS";
+ 
+var MENU_GE_AGRUPACIONES = "AG";
+ 
+var AUDIT_PERFIL = "PAC";
+ 
+var SECC_DATOS_INTERNA_PREFIX = "SDI";
+ 
+var ACTIVIDAD_MOTIVO_ALTA = "Alta actividad desde la Web";
+ 
+var TIPO_EXP_CCO = "1";
+ 
+var MAX_HASTA = "10000";
+ 
+var BDC_ERROR_NUMAPP = "NUMAPP_NO_VALIDO";
+ 
+var ID_LOCAL_MAX_MIGCLAI = "270524237";
+ 
+var MIN_DESDE = "0";
+ 
+var ES_LOCAL = "L";
+ 
+var ACCEX_TIPEX_INT_OPC = "ACCESO.EXTERNO.TIPEX.INT.OPC";
+ 
+var SECUENCIAL_INCREMENTO = "10";
+ 
+var ENTIDAD_SIGMA_AGRUPACION = "A";
+ 
+var TIPO_SUJETO_COMUNIDAD_PROP = "3";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_SIN_ID = "285000000";
+ 
+var TRUE = "true";
+ 
+var AUDIT_CENSO_HISTORICO = "CCH";
+ 
+var SIT_LOCAL_BAJA = "8";
+ 
+var ENTIDAD_SIGMA_LOCAL = "L";
+ 
+var BDC_ERROR_DIR = "DIR_NO_VALIDA";
+ 
+var SECC_DATOS_DATEP = "DATEP";
+ 
+var DIR_VARIAS_COINCIDENCIAS = "-4";
+ 
+var ROL_DATOS_ACCESO_GIS = "ROLDATOS_ACCESO_GIS";
+ 
+var BDC_ERROR_NN = "NO_NORMALIZADA";
+ 
+var OPER_REUNIFICAR = "reunificar";
+ 
+var BDC_CLSDIRECCION_CAM = "2";
+ 
+var TABLA_CLASES = "OBCLAS";
+ 
+var SECC_DATOS_INTERNAS = "ACAL#INAL#INMO#ACMO";
+ 
+var BDC_PROVINCIA_COD = "28";
+ 
+var URL_CENSO_HISTORICO = "URL.CENSO.HISTORICO";
+ 
+var DIR_NO_VALIDA = "-1";
+ 
+var ID_LOCAL_INICIAL = "1";
+ 
+var TABLA_EPIGRAFE = "EPIACT";
+ 
+var AUDIT_OPE_DIVIDIR_INI = "DVI";
+ 
+var ESTADO_DATOS_VALIDADO = "2";
+ 
+var EPIGRAFE_GRAL1 = "PTECO1";
+ 
+var EPIGRAFE_GRAL2 = "PTECO2";
+ 
+var SECUENCIAL_NO_VALIDO = "-1";
+ 
+var BDC_ERROR_VARIOS_REG = "VARIOS_REG";
+ 
+var OP_GES_LICENCIAS = "gesLicencias";
+ 
+var SISTEMA_PLATEA = "PLATEA";
+ 
+var TIPO_DIRECCION_NOTIFICACION = "Notificacion";
+ 
+var EPIGRAFES_TERRAZAS_VELADORES = "EPIS_TERRAZAS";
+ 
+var DISTRITO_REGULARIZADO = "DIS_REGULARIZADO";
+ 
+var APLICACION_REG_WCLA = "WCLA";
+ 
+var LOCAL_NULO_AGRUPADO = "0";
+ 
+var TABLA_TIPPER = "TIPINP";
+ 
+var TIPO_SUJETO_FISICO = "2";
+ 
+var AUDIT_OPE_DESHACER = "DES";
+ 
+var BDC_CODLOCAL = "0";
+ 
+var SIT_ACTIVIDAD_CESADA = "21";
+ 
+var EP_WS_GIS = "ENDPOINT.CLIENTE.WSGIS";
+ 
+var LOCAL_SI_AGRUPADO = "1";
+ 
+var OP_MODIFICACION = "modificacion";
+ 
+var ACCEX_MENUS_CONSULTA = "18";
+ 
+var TABLA_TIPO = "OBTIPO";
+ 
+var DIR_NO_VALIDA_NUMAPP = "-7";
+ 
+var SELECCIONE = "-1";
+ 
+var TIPO_INTERIOR = "3";
+ 
+var NO_INT_SELECCIONADO = "-1";
+ 
+var FALSE = "false";
+ 
+var MOT_REL_REUNIFICAR = "1";
+ 
+var SIZE_CODIGO_LOCAL = "10";
+ 
+var SECC_DATOS_INOP = "SDIINOP";
+ 
+var TIPO_NUM = "NUM";
+ 
+var MOT_REL_DIVISION = "3";
+ 
+var OP_OPERACION = "operacion";
+ 
+var SECC_DATOS_INAL = "SDIINAL";
+ 
+var SECC_DATOS_ESTDA = "ESTDA";
+ 
+var USU_CARGA_INICIAL = "MIGCLAI";
+ 
+var ESTADO_VIGENCIA_ACTIVO = "1";
+ 
+var TABLA_USOS = "OBUSOS";
+ 
+var EP_WS_CENSOHISTORICO = "ENDPOINT.CLIENTE.WSCENSOHISTORICO";
+ 
+var TIPO_PERIODO_TERRAZA_ESTACIONAL = "EST";
+ 
+var SIT_LOCAL_ABIERTO = "1";
+ 
+var AUDIT_ROL = "RDT";
+ 
+var AGRUPACION_VIGENTE = "VIGENTE";
+ 
+var TABLA_TIPDOC = "TIPDOC";
+ 
+var TIPO_INSTA_CERRAMIENTO = "3";
+ 
+var ACTIVIDAD_MOTIVO_ACTUALIZAR = "Modificacion de la actividad desde la Web";
+ 
+var BUSCAR_CUALQUIER_ACCESO = "0";
+ 
+var AUDIT_ALTA = "ALT";
+ 
+var TIPO_KM = "KM.";
+ 
+var AUDIT_ACTIVIDAD = "ACT";
+ 
+var OPER_DESH_OPERACION = "deshacerOperacion";
+ 
+var EP_UWEB = "UWEB.ENDPOINT";
+ 
+var SIT_LOCAL_CERRADO = "4";
+ 
+var SECC_DATOS_ACAL = "SDIACAL";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO = "280000000";
+ 
+var BDC_ERROR_GENERICO = "BDC_ERROR_GENERICO";
+ 
+var AREA_AGRUPACION = "AGRUPACION";
+ 
+var ACCESO_EXT_PERFIL_ACTUA = "GESTR";
+ 
+var CE_ERROR = "error";
+ 
+var MENU_GE_ADMINISTRACION = "AD";
+ 
+var ES_POSICION_MODIF = "M";
+ 
+var ACCESO_EXT_ALTA = "ALTA";
+ 
+var SUJETO_EXISTENTE_ADVERTIR = "S_A";
+ 
+var OP_ACTIVIDAD = "actividad";
+ 
+var PREFIJO_PISCINA = "PISCINA";
+ 
+var TIPO_PERIODO_TERRAZA_ANUAL = "ANU";
+ 
+var ACCEX_SECC_DATOS_ALTA = "SALUD#HORAR#URBAN#SEGUR";
+ 
+var AGRUPACION_NULA = "99000000";
+ 
+var DIR_NO_VALIDA_VIARIO_NACION = "-6";
+ 
+var SIT_LOCAL_BAJA_PCA = "10";
+ 
+var PERFIL_ACTUA_PERSON = "PERSO";
+ 
+var AUX_APROX_POSTAL_TIPO_NUMERACION = "1";
+ 
+var SECUENCIAL_INICIAL = "1000";
+ 
+var SECC_DATOS_IDENT = "IDENT";
+ 
+var SECC_DATOS_SALUD = "SALUD";
+ 
+var BUSCAR_SOLO_EDIFICIO = "1";
+ 
+var BUSCAR_SOLO_PRINCIPAL = "2";
+ 
+var PREFIJO_EDIFICIO = "EDIFICIO";
+ 
+var USU_TRAJAJO_CAMPO = "MTCCLAI";
+ 
+var DIR_NO_NORMAL = "-3";
+ 
+var PETIC_POSIC_PENDTE_CON_ERROR = "1";
+ 
+var URL_SIGMA = "URL.SIGMA";
+ 
+var AUX_APROX_POSTAL_TIPO_LOCAL = "2";
+ 
+var SECC_DATOS_HORAR = "HORAR";
+ 
+var CE_INFORMACION = "informacion";
+ 
+var KEY_VACIO = "";
+ 
+var BDC_CIUDAD_COD = "54953";
+ 
+var BDC_CLSDIRECCION = "1";
+ 
+var EP_WS_CENSO = "ENDPOINT.CLIENTE.WSCENSO";
+ 
+var LOCAL_MOTIVO_BAJA_AGRUPACION = "BAJA AGRUPACION";
+ 
+var LOCAL_MERCADILLO = "4";
+ 
+var ID_LOCAL_RESTRINGIDO_TR_CAMPO_ESTAD = "290000000";
+ 
+var PREFIJO_SITUADO_AISLADO = "SITUADO";
+ 
+var CE_CONFIRMACION = "confirmacion";
+ 
+var TIPOS_ACCESO_DIS_REG = "TIPOS_ACCESO_DIS_REG";
+ 
+var BDC_ERROR_VIARIO_NACION = "VIARIO_NAC_NO_VALIDO";
+ 
+var LOCAL_OTRO_SITUADO = "3";
+ 
+var OP_SIGMA_BAJA = "baja";
+ 
+var TIPO_DIRECCION_FISCAL = "Fiscal";
+ 
+var MENU_GE_LOCALES = "LC";
+ 
+var AUDIT_OPE_REUNIFICAR_FIN = "RUF";
+ 
+var AUDIT_OPE_UNIR_INI = "UNI";
+ 
+var SECC_DATOS_ACMO = "SDIACMO";
+ 
+var SECC_DATOS_INMO = "SDIINMO";
+ 
+var MAX_ID_LOCAL_OLD = "MAX_ID_LOCAL_OLD";
+ 
+var TIPO_EXP_TRC = "0";
+ 
+var ACCESO_UNICO = "-1";
+ 
+var PREFIJO_MERCADILLO = "MERCADILLO";
+ 
+var AUDIT_INTERESADO = "INT";
+ 
+var SUJETO_EXISTENTE_NO_GRABAR = "S_NG";
+ 
+var USUARIO_SESION = "USUARIO_SESION";
+ 
+var OPER_UNIR = "unir";
+ 
+var CE_ADVERTENCIA = "advertencia";
+ 
+var TIPO_PISCINA = "10";
+ 
+var TABLA_CATEGORIA = "OBCATE";
+ 
+var REPRESENTACION_PLANO = "P";
+ 
+var BUSCAR_CUALQUIER_ACCESO_VIGENTE = "3";
+ 
+var BUSCAR_CUALQUIER_ACCESO_NOVIGENTE = "4";
+ 
+var PREFIJO_SOLAR = "SOLAR";
+ 
+var SECUENCIAL_VALIDO = "0";
+ 
+var DIR_ERROR_BDC = "-5";
+ 
+var SEPARADOR = "#";
+ 
+var WCLA_NOCONTROL_DIRNN = "DIRNN_NOCONTROL";
+ 
+var AUDIT_AGRUPACION = "AGR";
+ 
+var SIT_LOCAL_BAJA_REUNIFICACION = "9";
+ 
+var MOT_REL_UNION = "2";
+ 
+var ESTADO_VIGENCIA_NOACTIVO = "2";
+ 
+var AUDIT_MODIF = "MOD";
+ 
+var ACTIVIDAD_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var LOCAL_MOTIVO_BAJA = "BAJA";
+ 
+var SELECT_TIPOVIA_BDC = "CALLE                   ";
+ 
+var LOCAL_NO_AGRUPADO = "2";
+ 
+var PREFIJO_MERCADILLO_RASTRO = "RASTRO";
+ 
+var TIPO_EDIFICIO_SINDEFINIR = "5";
+ 
+var CARPETA_PLANTILLAS_INFORMES = "/plantillaInformes/";
+ 
+var SECUENCIAL_REPETIDO = "-2";
+ 
+var ACCEX_MENUS_ALTA = "2#15";
+ 
+var NO_STRING_SELECCIONADO = "-1";
+ 
+var SECC_DATOS_GPCA = "GPCA";
+ 
+var AUDIT_CONSULTA = "CON";
+ 
+var LOCAL_MOTIVO_ALTA = "ALTA";
+ 
+var RESULTADOS_POR_PAGINA = "10";
+ 
+var ACCESO_EXT_MODIFICAR = "MODIFICAR";
+ 
+var TIPO_PUERTA_CALLE = "1";
+ 
+var TIPO_AGR_NO_SIGMA = "TIPO_AGR_NO_SIGMA";
+ 
+var BAJA_AGRUPACION = "1";
+ 
+var AREA_ACTIVIDAD = "ACTIVIDAD";
+ 
+var TABLA_LETRA = "LETEST";
+ 
+var BDC_CIUDAD = "MADRID";
+ 
+var URL_ENTIDAD_SIGSA = "URL.ENTIDAD.SIGSA";
+ 
+var BDC_ERROR_VIA = "VIA_NO_VALIDA";
+ 
+var DIRECCION_LONG_MAXIMA = "39";
+ 
+var AUDIT_USUARIO = "USU";
+ 
+var SIZE_NDP = "8";
+ 
+var ESTADO_DATOS_HISTORICO = "4";
+ 
+var LOCAL_MOTIVO_REGULARIZACION = "REGULARIZACION TC";
+ 
+var TIPO_SUJETO_JURIDICO = "1";
+ 
+var ROLDATOS_ACEGI = "ROLDATOS_ACEGI";
+ 
+var DISTRITO_DIR_NN_MER_RASTRO = "CENTRO";
+ 
+var ESTADO_DATOS_PROVISIONAL_CARGA = "3";
+ 
+var TIPO_EXP_ELU = "2";
+ 
+var SECC_DATOS_URBAN = "URBAN";
+ 
+var PETIC_POSIC_PENDTE_SIN_TRATAR = "0";
+ 
+var TIPO_MERCADILLO_RASTRO = "7";
+ 
+var TIPO_SOLAR = "8";
+ 
+var SECC_DATOS_SEGUR = "SEGUR";
+ 
+var AGRUPACION_NO_VIGENTE = "NO VIGENTE";
+ 
+var RESULTADOS_AJAX = "30";
+ 
+var BDC_PROVINCIA = "MADRID";
+ 
+var SECC_DATOS_INCARTO = "SDICARTO";
+ 
+var ESTADO_DATOS_PENDIENTE_VALIDACION = "1";
+ 
+var PREFIJO_CTF = "CENTRO TRANSF.";
+ 
+var MARCO_CENSO = "15";
+ 
+var ID_LOCAL_MIN_MTCCLAI = "280000000";
+ 
+var TIPO_DIRECCION_NOTIFICACION_ACTIVIDAD = "NotifiActividad";
+ 
+var TIPO_SN = "S/N";
+ 
+var LOCAL_MOTIVO_MODIF = "MODIFICACION";
+ 
+var TIPO_EDIFICIO = "9";
+ 
+var BDC_CLSDIRECCION_NN = "9";
+ 
+var TIPO_MERCADILLO = "5";
+ 
+var AREA_LOCAL = "LOCAL";
+ 
+var SECC_DATOS_GECAR = "GECAR";
+ 
+var AREA_INTERESADOS = "INTERESADOS";
+ 
+var SIT_PREFIJO_BAJA = "Baja";
+ 
+var MENU_GE_INTERESADOS = "IN";
+ 
+var MENU_GE_ACTIVIDADES = "AC";
+ 
+var TIPO_AGRUPADO = "0";
+ 
+var DIR_NO_NORMAL_NO_PERMITIDA = "-8";
+ 
+var OP_CONSULTA = "consulta";
+ 
+var ESTADO_VIGENCIA_AMBOS = "0";
+ 
+var EP_WS_INTERESADOS = "ENDPOINT.CLIENTE.WSINTERESADOS";
+ 
+var ES_AGRUPACION = "A";
+ 
+var SECC_DATOS_SELEP = "SELEP";
+ 
+var BDC_PAIS = "ESPAÑA";
+ 
+var TIPO_SITUADO_AISLADO = "4";
+ 
+var AUDIT_OPE_REUNIFICAR_INI = "RUI";
+ 
+var TIPO_SUJETO_ORGANISMO = "4";
+ 
+var DIR_NO_VALIDA_NN = "-2";
+ 
+var AUDIT_BAJA = "BAJ";
+ 
+var SIT_ACTIVIDAD_ABIERTA = "20";
+ 
+var SECC_DATOS_CONTR = "CONTR";
+ 
+var APLICACION_AC_WCLA_SIGSA = "AC_SIGSA";
+ 
+var FORMAT_NOM_CLASE_BDC = "%1$-24S";
+ 
+var AUDIT_LOCAL = "LOC";
+ 
+var TIPO_OTRO_SITUADO = "6";
+ 
+var TIPO_PCA = "12";
+ 
+var AUDIT_OPE_DIVIDIR_FIN = "DVF";
+ 
+var REPRESENTACION_EDIFICO = "E";
+ 
+var SECC_DATOS_DETEP = "DETEP";
+ 
+var TIPO_CTF = "11";
+ 
+var ES_POSICION_BAJA = "B";
+ 
+var ES_POSICION_ALTA = "A";
+ 
+var TIPO_EXP_ELF = "3";
+ 
+var EP_WS_ECLUS = "ENDPOINT.CLIENTE.WSECLUS";
+ 
+var ACCEX_PERFILACTUA = "ACCEX_PERFILACTUA";
+ 
+</script>
+ 
+ 
+<script src="js/general.js" type="text/javascript"></script>
+<script src="js/local.js" type="text/javascript"></script>
+<script src="js/direccion.js" type="text/javascript"></script>
+<script src="js/generalCenso.js" type="text/javascript"></script>
+<script src="js/funciones.js" type="text/javascript"></script>
+<script src="js/prototype-1.3.1.js" type="text/javascript"></script>
+<script src="js/ajaxtags-1.1.5.js" type="text/javascript"></script>
+<script> 
+ 
+	//var listaAccesosRango = new Array (5);
+	var listaAccesosRango = new Array (3);
+	listaAccesosRango [0] = new Array ("2", "Solo acceso principal");
+	listaAccesosRango [1] = new Array ("1", "Solo edificio");
+	listaAccesosRango [2] = new Array ("0", "Cualquier acceso");
+	//listaAccesosRango [3] = new Array ("3", "Cualquier acceso vigente");	
+	//listaAccesosRango [4] = new Array ("4", "Cualquier acceso no vigente");
+	
+	//var listaAccesosLocal = new Array (4);
+	var listaAccesosLocal = new Array (2);
+	listaAccesosLocal [0] = new Array ("2", "Solo acceso principal");
+	listaAccesosLocal [1] = new Array ("0", "Cualquier acceso");
+	//listaAccesosLocal [2] = new Array ("3", "Cualquier acceso vigente");	
+	//listaAccesosLocal [3] = new Array ("4", "Cualquier acceso no vigente");
+	
+		
+	 document.onkeyup=function()
+	 {
+		if(event.keyCode == 13)
+		{
+			irListadoConFiltro();
+		}
+	 }
+	 
+	var tipOp = new Array ("reunificar", 
+						   "unir",
+						   "dividir",
+						   "deshacerOperacion")
+	
+	function seleccionarOp(id){
+		var elem = document.getElementById(id);
+		if (elem.checked){
+			document.getElementById("tipoOperacion").value=elem.value;
+			for (var i=0; i < tipOp.length; i++){
+				if (tipOp[i] != elem.value){
+					document.getElementById(tipOp[i]).checked = false;
+				}
+			}
+			cargarSituacion(elem.value);
+		}else{
+			document.getElementById("tipoOperacion").value="";
+		}
+	}
+	
+	/*Cargo array de situaciones. Cada lista depende del tipo de operacion*/
+	var situacion = new Array();
+					  
+	
+		situacion[0] =  new Option("Abierto","1",false);
+	
+		situacion[1] =  new Option("Cerrado","4",false);
+	
+		situacion[2] =  new Option("Uso vivienda","5",false);
+	
+		situacion[3] =  new Option("En obras","7",false);
+	
+		situacion[4] =  new Option("Baja","8",false);
+	
+		situacion[5] =  new Option("Baja Reunificación","9",false);
+	
+		situacion[6] =  new Option("Baja PC Asociado","10",false);
+		
+	 
+ 
+	var sitDeshacerOp = new Array ();
+	 
+		
+	function cargarSituacion(tipoOp){
+		/*Segun el tipo de operacion limitamos la situacion*/
+		var selSit = document.getElementById("situacion");
+		
+		var situacionSelect = selSit.options[selSit.selectedIndex].value
+		
+		if (document.getElementById("tipoOperacion").value == "deshacerOperacion") {
+		 	/*Borro todas las opciones menos la 0*/
+		 	var i = selSit.options.length - 1;
+			for (i; i > 0 ; i--){
+				if (selSit.options[i].value != "0"){
+					selSit.options[i] = null;
+				}
+			}
+			
+			/*Creo nuevas opciones*/
+			for (var j=0; j < sitDeshacerOp.length; j++){
+				selSit.options[j+1] = sitDeshacerOp[j];
+			}	
+			
+			/*Selecciono la primera*/
+			selSit.options[0].selected = true;
+ 
+		}else{
+		 	/*Borro todas las opciones*/
+		 	var i = selSit.options.length -1;
+			for (i; i > 0 ; i--){
+				if (selSit.options[i].value != "0"){
+					selSit.options[i] = null;
+				}
+			}
+			
+			/*Creo nuevas opciones*/
+			for (var j=0; j < situacion.length; j++){
+				selSit.options[j+1] = situacion[j];
+			}		
+			
+			/*Selecciono la primera*/
+			selSit.options[0].selected = true;	
+		
+		}
+		
+		/*Recorro nuevas optiones y si existe el valor seleccionado inicialmente se vuelve a seleccionar */
+		for (var k=0; k < selSit.options.length; k++ ){
+			if (selSit.options[k].value == situacionSelect){
+				selSit.options[k].selected=true;
+			}
+		
+		}
+	}	
+	
+	function cargaIniBusLocal(){
+		/*Al meter onload en pagina, disparo ciertas funciones de general.js que se lanzar automaticamente desde aqui*/
+		if(acciones.existeId("scrDiv_fechaDesde")){f_fechaDesde.carga();}
+		if(acciones.existeId("scrDiv_fechaHasta")){f_fechaHasta.carga();}
+	
+		/*Controles de la pagina*/
+		cargaCapasBusquedaPorLocal();
+		if (document.getElementById("tipoBusqueda").value == 'L'){
+			var valorSelect = document.getElementById("buscarAcceso").options[document.getElementById("buscarAcceso").selectedIndex].value;
+			if (document.getElementById("tipologia").value != TIPO_INTERIOR && document.getElementById("tipologia").value != TIPO_AGRUPADO){
+				document.getElementById("capaBuscarAcceso").style.display="none";
+			}
+			cargarListaAccesos ('buscarAcceso', valorSelect, listaAccesosLocal);
+		}
+		
+		/*Carga ini check/combos operaciones*/
+		if (document.getElementById("tipoOperacion") && document.getElementById("tipoOperacion").value != ''){
+			var idIni = document.getElementById("tipoOperacion").value;
+			seleccionarOp(idIni);
+		}	
+		
+	}
+	
+</script>
+<!-- importa constantes -->
+</head>
+<body onload="javascript:cargaIniBusLocal();">
+<!-- Inicio div contenedor -->
+<div id="contenedor">
+	<!-- Inicio div de contenido -->
+	
+	<div id="contenido">
+	<h3>B&uacute;squeda de locales</h3>
+	<div class="info_form">
+		<p>Desde esta secci&oacute;n podr&aacute;n localizar locales inclu&iacute;dos en la base de datos de censo.<br/>
+		Teclee uno o m&aacute;s criterios de b&uacute;squeda para localizar locales.</p>
+	</div>
+ 
+ 
+ 
+ 
+<!-- Ini Area errores -->
+	
+	<!-- Fin area errores -->
+	<!-- Ini Area mensajes Informativos -->
+		
+	<!-- Area mensajes confirmacion -->
+	
+	<!-- Area mensajes Advertencia -->
+			
+  	<!-- Mensajes de error de validator -->
+	<div id="areaErrores" style="display:none;">
+		<div class="mensaje_aviso error">
+		<p class="titulo">Error. Revise los criterios de busqueda.</p>
+		<p><strong></strong></p>
+		<p><div id="textoAreaErrores" class="textoAreaErrores" ></div></p>
+		</div>		
+  	</div>
+<!-- Fin mensajes de error -->	
+<!-- Formulario de busqueda de locales -->	
+<div class="formulario_generico">
+	<form name="localCriteriosForm" id="localCriteriosForm" method="post" action="/WCLA/buscarLocal.do?accion=resultado&inicioBusqueda=S">
+	<input type="hidden" name="op" value="consulta" id="op">	
+	<input type="hidden" name="irAPagina" value="1">
+	
+	<!-- INI. Area seleccion tipo operacion con locales  *-->
+	
+	<!-- FIN. Area seleccion tipo operacion -->
+	<fieldset>
+	<legend>Criterios de busqueda</legend>
+	
+		<div class="c05">
+			<label for="id">Id. Local</label>
+			<input type="text" name="id" maxlength="10" value="" id="id">
+		</div>
+ 
+		<div class="c1"  style="width:7em">
+			<label>Tipo de Via</label>
+			<select name="localTipoVia" onchange="javascript:limpiarCodVia()" id="localTipoVia" style="width:10.25em"><option value="-1">(Seleccione)</option>
+			  	
+					
+						<option value="ACCESO                  ">ACCESO</option>
+					
+						<option value="ARROYO                  ">ARROYO</option>
+					
+						<option value="AUTOPISTA               ">AUTOPISTA</option>
+					
+						<option value="AUTOVIA                 ">AUTOVIA</option>
+					
+						<option value="AVENIDA                 ">AVENIDA</option>
+					
+						<option value="BARRANCO                ">BARRANCO</option>
+					
+						<option value="BARRIO                  ">BARRIO</option>
+					
+						<option value="BULEVAR                 ">BULEVAR</option>
+					
+						<option value="CALLE                   " selected="selected">CALLE</option>
+					
+						<option value="CALLEJON                ">CALLEJON</option>
+					
+						<option value="CAMINO                  ">CAMINO</option>
+					
+						<option value="CANAL                   ">CANAL</option>
+					
+						<option value="CANTON                  ">CANTON</option>
+					
+						<option value="CAÑADA                  ">CAÑADA</option>
+					
+						<option value="CARRERA                 ">CARRERA</option>
+					
+						<option value="CARRETERA               ">CARRETERA</option>
+					
+						<option value="CARRIL                  ">CARRIL</option>
+					
+						<option value="COLONIA                 ">COLONIA</option>
+					
+						<option value="COMPLEJO                ">COMPLEJO</option>
+					
+						<option value="COSTANILLA              ">COSTANILLA</option>
+					
+						<option value="CUESTA                  ">CUESTA</option>
+					
+						<option value="EDIFICIO                ">EDIFICIO</option>
+					
+						<option value="ESCALINATA              ">ESCALINATA</option>
+					
+						<option value="ESTACION                ">ESTACION</option>
+					
+						<option value="FINCA                   ">FINCA</option>
+					
+						<option value="FUENTE                  ">FUENTE</option>
+					
+						<option value="GALERIA                 ">GALERIA</option>
+					
+						<option value="GLORIETA                ">GLORIETA</option>
+					
+						<option value="GRAN VIA                ">GRAN VIA</option>
+					
+						<option value="GRUPO                   ">GRUPO</option>
+					
+						<option value="JARDIN                  ">JARDIN</option>
+					
+						<option value="LUGAR                   ">LUGAR</option>
+					
+						<option value="MERCADO                 ">MERCADO</option>
+					
+						<option value="MONTE                   ">MONTE</option>
+					
+						<option value="MONUMENTO               ">MONUMENTO</option>
+					
+						<option value="PARQUE                  ">PARQUE</option>
+					
+						<option value="PARTICULAR              ">PARTICULAR</option>
+					
+						<option value="PASADIZO                ">PASADIZO</option>
+					
+						<option value="PASAJE                  ">PASAJE</option>
+					
+						<option value="PASEO                   ">PASEO</option>
+					
+						<option value="PISTA                   ">PISTA</option>
+					
+						<option value="PLAZA                   ">PLAZA</option>
+					
+						<option value="PLAZUELA                ">PLAZUELA</option>
+					
+						<option value="POBLADO                 ">POBLADO</option>
+					
+						<option value="POLIGONO                ">POLIGONO</option>
+					
+						<option value="PUENTE                  ">PUENTE</option>
+					
+						<option value="PUERTA                  ">PUERTA</option>
+					
+						<option value="RIO                     ">RIO</option>
+					
+						<option value="RONDA                   ">RONDA</option>
+					
+						<option value="TRANSVERSAL             ">TRANSVERSAL</option>
+					
+						<option value="TRASERA                 ">TRASERA</option>
+					
+						<option value="TRAVESIA                ">TRAVESIA</option>
+					
+						<option value="URBANIZACION            ">URBANIZACION</option>
+					
+						<option value="VIA                     ">VIA</option></select>
+		</div>
+		<div class="c2">
+			<label>Nombre Via</label>
+			<!-- localVia -->
+		 	<input type="text" name="nomVia" maxlength="48" size="50" value="" onchange="javascript:limpiarCodVia();" id="localVia">
+			<input type="hidden" name="codVia" value="0" id="localCodVia">
+			<input type="hidden" id="respuestaViaLocal"/>
+			<input type="hidden" id="respuestaNum"/>
+		</div>	
+		<div class="c05">
+			<label >&nbsp;</label>
+			<img id="buscarViaLocal" class="icono hand" src="img/lupaform.gif" alt="Buscar via"/>			
+		</div>
+				
+		<br class="limpiar"/>
+ 	    <div  class="c2" style="width:13em;">  
+			<label>Tipo Búsqueda</label>
+			&nbsp;&nbsp;<input type="radio" class="radio" name="radioTipoBusqueda" id="porRango" value="R" onclick="javascript:selectTipoBusqueda('R', listaAccesosRango);" checked="checked"/>
+			<span class="texto" style="color:#2C5766;clear:none;margin-right:0em; margin-left:0em;">&nbsp;Por Rango</span>
+			<input type="radio" class="radio" name="radioTipoBusqueda" id="porLocal" value="L" onclick="javascript:selectTipoBusqueda('L', listaAccesosLocal);" />
+			<span class="texto" style="color:#2C5766;clear:none;margin-right:0em; margin-left:0em;">&nbsp;Por Local</span>
+ 	    </div>
+ 	    
+ 	    <div class="c1" style="width:auto;">
+			<label>Tipo Acceso</label>
+			<select name="tipologia" onchange="javascript:busquedaLocalesTipoAcceso();" id="tipologia" style="width:auto;"><option value="-1" selected="selected">(Seleccione)</option>
+				
+      				<option value="0">Agrupado</option>
+<option value="11">Centro Transf. Aislados</option>
+<option value="9">Edificio</option>
+<option value="3">Interior</option>
+<option value="5">Mercadillo</option>
+<option value="7">Mercadillo del Rastro</option>
+<option value="6">Otro Situado</option>
+<option value="12">PC Asociado</option>
+<option value="10">Piscina Cdad. Propietarios</option>
+<option value="1">Puerta Calle</option>
+<option value="4">Situado Aislado</option>
+<option value="8">Solar</option></select>
+		</div>
+		
+ 	    <div class="c1" id="capaBuscarAcceso">
+			<label for="buscarAcceso">&nbsp;</label>
+			<select name="buscarAcceso" id="buscarAcceso"><option value="2">Solo acceso principal</option>
+				<option value="1">Solo edificio</option>				
+				<option value="0" selected="selected">Cualquier acceso</option>
+				<!-- 
+				<option value="3">Cualquier acceso vigente</option>
+				<option value="4">Cualquier acceso no vigente</option>
+				--></select>	 			
+		</div>	 		
+				
+		<br class="limpiar"/>
+		
+		<div class="c05">
+							  
+ 			 <label for="tipoNum">Tipo Nº</label> 
+			 <select name="tipoNum" id="tipoNum"><option value="NUM">NUM</option>
+<option value="KM.">KM.</option>
+<option value="S/N">S/N</option></select>
+			   					
+		</div>
+		
+		<div id="capaNumero" class="c1" style="width:7.5em;"
+										>
+			<label id="labelNumDesde">
+				Rango Números
+							
+			</label>			
+			
+			<div class="multiple" id="rangoNumero" style="display:block;">
+				<input type="text" name="numDesdeR" maxlength="6" id="numDesdeR" style="width:50px" onchange='javascript:actualizaNumdesde(this.value);' value="">-<input type="text" name="numHasta" maxlength="6" value="" id="numHasta" style="width:50px">
+			</div>	
+					
+			<div class="multiple" id="numeroLocal" style="display:none;">						
+				<input type="text" name="numDesdeL" maxlength="6" id="numDesdeL" style="width:50px" onchange='javascript:actualizaNumdesde(this.value);' value="">
+				<img id="tmpBuscarNum" class="icono hand" src="img/lupaform.gif" alt="Buscar número" onclick="javascript:preBuscarNumViaActividad()"/>
+				<input type="button" id="buscarNum" value="buscarNum" style="display:none"/>
+				<input type="button" id="buscarViaNum" value="buscarViaNum" style="display:none"/>
+			</div>
+		</div>				 
+			
+		<input type="hidden" name="tipoBusqueda" value="R" id="tipoBusqueda">
+		
+		
+		<div class="formulario_generico" id="busquedaPorRango" 
+			style="display:none;" 
+			>
+			
+			<div class="c05" style="width:3.5em;margin-top:1px;" >
+				<label for="tmpCali">Calif.</label>					
+				<input type="text" name="calificador" maxlength="4" value="" id="calificador" style="width:50px">
+			</div>
+			<div class="c05" id="capaEscalera" style="width:3.5em;margin-top:1px;" >
+				<label for="tmpEscalera">Escalera</label>					
+				<input type="text" name="escalera" maxlength="4" value="" id="escalera" style="width:50px">
+			</div>	
+			<div class="c05" id="capaPlanta" style="width:3.5em; margin-top:1px;">
+				<label id="labelPlanta" for="tmpPlanta">Planta</label>					
+				<input type="text" name="planta" maxlength="4" value="" id="planta" style="width:50px">
+			</div>	
+			<div class="c05" id="capaPuerta" style="width:3.5em; margin-top:1px;">
+				<label id="labelPuerta" for="tmpPuerta">Nº local</label>					
+				<input type="text" name="puerta" maxlength="4" value="" id="puerta" style="width:50px">
+			</div>	
+			
+		</div>
+		
+ 
+		<input type="hidden" name="numDesde" value="" id="numDesde">
+		<!-- Campos para busqueda direcciones -->		
+		<input type="hidden" id="tmpClase" value=""/>
+		<input type="hidden" id="tmpNDP" name="tmpNDP" value=""/>
+		<input type="hidden" id="tmpCodLocal" value="0"/>	
+		<input type="hidden" id="tmpCodBarrio" value=""/>
+		<input type="hidden" id="tmpCodDistrito" value=""/>
+		<input type="hidden" id="tmpSeccion" value=""/>
+		<input type="hidden" id="tmpBusquedaExacta" value=""/>
+		
+ 
+		<br class="limpiar"/>		
+		<div class="c1" style="WIDTH: 95px; display:none;">
+			<label>Agrupado</label>
+			<select name="esAgrupado" onchange="javascript:cambiaAgrupado();mostrarCapasAgrupado();" id="esAgrupado" style="width:100px"><option value="0" selected="selected">(Seleccione)</option>
+				<option value="1">Si</option></select>	 
+		</div>		
+		<div id="verAgrupacion">
+			 <div class="c2">
+				 <label>Agrupación</label>
+				 <input type="text" name="textoAgrupacion" maxlength="70" value="" onchange="borrarCodAgrupado()" readonly="readonly">	
+				 <input type="hidden" name="codAgrupacion" value="">
+			 </div>
+			 <div class="c05" style="width:auto;">
+				<label>&nbsp;</label>
+				<img id="buscarAgrupacion" type="image" src="img/lupaform.gif" onclick="ventanaBuscaAgrupacion(true);" alt="Buscar agrupación" class="icono hand" />&nbsp;
+				<img class="icono hand" src="img/iconos/delete.gif" onclick="borrarAgrupacionSelect()" alt="Borrar agrupacion"/>
+			</div>
+		</div>
+		<br class="limpiar"/>
+		
+		<div class="c1">
+							  
+ 			 <label for="estado">Estado datos</label> 
+			 <select name="estado"><option value="0" selected="selected">Seleccione un estado</option>
+		      	<option value="1">Provisional</option>
+<option value="2">Definitivo</option>
+<option value="3">Prov. Carga</option>
+<option value="4">Historico</option></select>
+			   					
+		</div>
+		
+		<div class="c05" style="WIDTH: 7.2em">
+							  
+ 				<label for="situacion">Situación local</label> 
+				<select name="situacion" onchange="javascript:limitarBuscarAcceso();" style="WIDTH: 140px"><option value="0" selected="selected">Seleccione situación</option>
+					<option value="1">Abierto</option>
+<option value="4">Cerrado</option>
+<option value="5">Uso vivienda</option>
+<option value="7">En obras</option>
+<option value="8">Baja</option>
+<option value="9">Baja Reunificación</option>
+<option value="10">Baja PC Asociado</option></select>
+			 			     			
+		</div>					
+	</fieldset>
+ 
+	<input type="button" class="boton" id="dameClases" value="dameClases" style="display:none"/>	
+	<div id="clasesNDP" style="display:none">
+	<fieldset>
+	<legend style="color:red">Direcciones encontradas para el NDP</legend>
+	<input type="hidden" id="clases" name="clases" value=""/>
+	<input type="hidden" id="direcciones" name="direcciones" value=""/>
+ 
+	<div class="texto">
+	<table id="tablaDireccion">
+		<thead>
+		<tr>
+			<td>Elegir</td>
+			<td>Clase</td>
+			<td>Direccion</td>
+		</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	</div>
+	</fieldset>
+	</div>
+		
+	
+	<fieldset>
+		<legend>Datos de control</legend>
+		<div class="c05" style="HEIGHT: 2.65em;">
+			<label for="NDP">NDP</label>
+			<input type="text" name="NDP" maxlength="8" value="" onchange="preNDPValido(this.value)" id="NDP">
+			<input type="hidden" name="claseDireccion" value="" style="claseDireccion">
+		</div>
+		<div class="c05">
+			<label for="secuencial">Nº Local</label>
+			<input type="text" name="secuencial" maxlength="4" value="" style="WIDTH: 50px">
+		</div>		
+		<br class="limpiar"/>
+		<div class="c2">			
+			<div class="c1 multiple" id="scrDiv_fechaDesde" >
+				<label for="fechaDesde">Fecha alta desde</label>
+				<input type="text" name="fechaDesde" maxlength="10" value="" style="width:110px">
+			</div>
+			
+			<div class="c1 multiple" id="scrDiv_fechaHasta" >
+				<label for="fechaHasta">Fecha alta hasta</label>
+				<input type="text" name="fechaHasta" maxlength="10" value="" style="width:110px">
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<!-- Botonera -->
+	<div class="botonera">
+		<input class="boton" type="button" value="Limpiar valores" onclick="javascript:limpiaFormBusqueda();"/>
+		<input class="boton" type="button" value="Buscar" onclick="javascript:irListadoConFiltro();"/>
+	</div>
+	<!-- Fin Botonera -->
+ 
+	<!-- Ini. Campos busqueda por local -->
+	<div style="display:none">
+		<input type="hidden" name="claseDireccion" value=""> 
+		<input type="text" name="NDPDireccion" value="">
+		<input type="hidden" name="codLocalDireccion" value=""> 
+		<input type="button" id="botonValidar" name="botonValidar" value="Validar direccion"/>
+	</div>
+	<!-- Fin. Campos busqueda por local -->	
+	<!-- Campo para controlar el poder buscar por direcciones NN -->
+	<input type="hidden" name="tmpControlDirNN" id="tmpControlDirNN" value="DIRNN_NOCONTROL"/>
+</form>
+</div>
+<!-- Fin Formulario de busqueda de locales -->	
+ 
+</div>
+<!-- Fin div de contenido -->
+</div>
+<!-- Fin div contenedor -->
+ 
+</body>
+</html>
+<script>	
+	 /*Busqueda de direccion*/
+ 	 new AjaxJspTag.Autocomplete(
+  		"direccion.do", {
+  		minimumCharacters: "2",
+  		parameters: "tipoVia={localTipoVia},via={localVia}",
+  		progressStyle: "throbbing",
+  		target: "respuestaViaLocal",
+  		className: "autocomplete",
+  		source: "localVia",
+		eventType: "click",
+  		idElemento: "buscarViaLocal",  		
+  		preFunction: "garantizaOnChange('localVia')",
+		postFunction: "tratarRespuestaViaLocal"
+  	});
+  	
+  	/*Busqueda de direccion al enviar form de busqueda*/
+  	new AjaxJspTag.UpdateField (
+  		"direccion.do", {
+		parameters: "tipoVia={localTipoVia},via={localVia},busquedaExacta=S",
+		source: "localTipoVia,localVia",
+		target: "respuestaViaLocal",		
+		action: "localCodVia",
+		eventType: "click",
+		postFunction: postValidarEmplazamiento
+	});
+ 	
+	/*Busqueda de clases asociadas al NDP*/
+  	new AjaxJspTag.UpdateField (
+  		"validarNDP.do", {
+		parameters: "NDP={NDP}",
+		source: "NDP",
+		target: "clases,direcciones",		
+		action: "dameClases",
+		eventType: "click",
+		postFunction: validarClases
+	});
+	
+	new AjaxJspTag.Autocomplete(
+  		"direccion.do", {
+  		minimumCharacters: "0",
+  		parameters: "tipoNum={tipoNum},codVia={codVia}",
+  		progressStyle: "throbbing",
+  		target: "respuestaNum",
+  		className: "autocomplete",
+  		source: "numDesdeL",
+		eventType: "click",
+  		idElemento: "buscarNum",  	
+		postFunction: "tratarRespuestaNumActividad"
+  	});
+  	
+  	new AjaxJspTag.UpdateField (
+  		"direccion.do", {
+		parameters: "tipoVia={localTipoVia},via={localVia},busquedaExacta={tmpBusquedaExacta}",
+		source: "localTipoVia,localVia,tmpBusquedaExacta",
+		target: "respuestaViaLocal",		
+		action: "buscarViaNum",
+		eventType: "click",
+		postFunction: posValidarViaNumActividad
+	});
+ 	
+ 	/* Busqueda por local. Busqueda de direccion */
+	new AjaxJspTag.UpdateField (
+  		"validarDireccion.do", {
+		source: "localTipoVia,localVia,tipoNum,numDesde,calificador,escalera,planta,puerta,tmpControlDirNN",
+		target: "tmpClase,tmpNDP,tmpCodLocal,,,",
+		action: "botonValidar",
+		parameters: "tipovia={localTipoVia},via={localVia},tiponum={tipoNum},numero={numDesde},calificador={calificador},escalera={escalera},planta={planta},puerta={puerta},dirNN=false,tipoAcceso={tmpControlDirNN}",
+		postFunction: posValidarDireccionPorLocal
+	});	
+ 
+</script>
+ 

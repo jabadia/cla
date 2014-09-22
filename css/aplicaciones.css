@@ -1,0 +1,73 @@
+body, p, h2, h3, h3, h4, h5, h6, form, fieldset, legend, dd, dt, dl, ul, li, ol, img { margin:0pt; padding:0pt; }
+#cabeceraAplicacion {
+ width: 100%; height: 4.250em; padding: 0; margin: 0 auto; background-color: #0580c3;
+ text-align: left; position: relative; background-repeat: repeat-y;
+ background-position: left top; );
+}
+#cabeceraAplicacion #logoAyreA {
+ float: left; width: 5.5em; background-position: right bottom;background-repeat: no-repeat;
+ background-image: url(../img/aplicaciones/logoayre_fondo.gif);
+ margin-left: 1.45em; padding-left: 0em; position: relative; z-index: 1;
+}
+* html #cabeceraAplicacion #logoAyreA {margin-left: .725em;}
+#cabeceraAplicacion #logoAyreA img { width: 3.688em; height: 4.250em;left: 12px;}
+#cabeceraAplicacion #logoAytoA {
+ text-align: right; float: right; width: 4.3em; background-position: left bottom; background-repeat: no-repeat;
+ /*background-image: url(../img/aplicaciones/CLA.gif);*/
+ /*background-image: url(../img/aplicaciones/logoAyto_fondo.gif);*/
+ /*border-right: .65em #FFFFFF solid;*/
+ position: relative; width: 5.575em; width/**/:/**/4.925em;
+}
+#cabeceraAplicacion #logoAytoA img { width: 2.500em; height: 4.250em;margin-right: 0.625em; }
+
+#navegacion {background: none;}
+#navegacionInterior { height: 100%; min-height: 1em;}
+#cabeceraAplicacion #menuHorizontal {
+ color: #FFFFFF; line-height: 1.063em; text-align: center; position: relative;
+ z-index: 99; background-color: #DDDDDD; float: left; width: 600px; top: 3.250em;
+}
+#nav_local { float: left; padding: 0; margin: 0; border-left: .625em solid #FFFFFF; width: 11.250em;}
+* html #nav_local {
+ width: 11.9em;
+ width/**/:/**/11.250em;
+}
+#pie .copy {font-size: 0.625em;}
+#pie .copy span {font-size: 1em;}
+#contenedorPopup {
+	width: 95%;background:none;margin:0;padding:0.5em;text-align: left;
+	background-repeat: repeat-y; background-position: left -3.125em;
+	background-image: url(../img/fondos/borde_sombra_derecho.gif);
+}
+#contenedorPopup #cabeceraAplicacion { background-image: none;border-bottom: .3em solid #FFFFFF;}
+#contenedorPopup #cabeceraAplicacion #logoAyreA { margin: 0; padding-left: 1.7em; }
+#contenedorPopup #cabeceraAplicacion #logoAytoA { width: 4.5em;}
+#contenedorPopup #navegacion { margin: 0; width: auto; }
+#contenedorPopup #navegacionInterior { border-right: .65em white solid;}
+#cerrar{font:0.6em Verdana, Arial, Helvetica, sans-serif;float: right;}
+#cerrar a{color:#666;text-decoration:none;float:right;margin-right:10px}
+#cerrar a img{position:relative;top:3px;margin-right:3px}
+#cerrar a:hover{text-decoration:underline;color:#999}
+#contenedorPopup .columna_contenido { width: auto; padding: 0; margin: 0;float: none;}
+.popup #pie {
+ margin: 0 .625em 0 .625em; width: auto; background-repeat: repeat-x;
+ background-position: top left; background-image: url(../img/aplicaciones/pie_fondo.gif);
+}
+.popup #pagina { margin: 0; width: auto; padding-left: 2em; background: none; }
+.popup .panel { margin: 0; }
+.popup .formulario_generico {height: 20.000em; margin: 0; padding: 0; width: auto; min-height: 6.250em; display: table; }
+.popup .formulario_generico div.f { float: none; clear: both; width: auto;}
+.c2, .c3 {/* float: none;*/}
+
+h1.titular_aplicacion {
+ font-size: 1em; margin: 0 .3em 0em 1.25em; position: absolute;
+ padding-top: 2.2em;padding-left: 3.6em; top: 1.25em;
+ left: 5em; color: #FFFFFF; font-family: Arial, Helvetica;
+ background-image: url(../img/aplicaciones/tituloApli_fondo.gif);
+ background-repeat: no-repeat;
+ border: none;
+}
+#contenedorPopup h1, .columna_contenido h2 {font-size: .95em; font-family: verdana; padding: 0;clear: both; font-weight: bold; color: #0580c3; border: none;}
+.columna_contenido h3 { background:none; clear:both; color:#569DD3; font-size:0.8em; font-weight:bold; margin:0.5em 0.625em 0.3em 0em; padding:0em; font-family:verdana,Helvetica; }
+.columna_contenido h4 { clear:both; color:#666666; font-family:arial,Helvetica; font-size:0.8em; font-weight:bold; margin:0.9em 0.625em 0.3em 0pt; padding:0pt; }
+.columna_contenido h3.pasos, .columna_contenido h4.pasos {font-weight: normal;}
+dl.resultados_busqueda {padding-left: 0em;}

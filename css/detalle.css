@@ -1,0 +1,51 @@
+/*-- Listado especial con bordes --*/
+	.detalleListaEspecial {	background-color: #F2F7FB;margin-top: 0.5em;padding: 0.5em}
+	
+	.detalleListaEspecial .listadoGenerico3 { margin:0;padding:0;color: #333;}
+	.detalleListaEspecial .listadoGenerico3 li{	font-size: 0.688em;	list-style: outside;list-style-image: url(../img/bullet_dist.gif);	margin-bottom:0.5em;}
+	.columna_contenido .texto p{margin:0 0 .5em 0;}
+	.columna_contenido .texto p.leyenda{color: #569dd3; margin: .5em 0 0 0;}
+	.columna_contenido .fechaEvento{font-size: 0.625em;	color: #569dd3; }
+	
+	.columna_contenido .texto dl{margin:0;width:99%}
+	.columna_contenido .texto dl.dl2{margin-top:.8em;}
+	.columna_contenido .texto dt{float:left;clear:left;font-weight:bold;margin-bottom:0.5em}
+	.columna_contenido .texto dd{margin:0;margin-bottom:0.5em}
+	
+	.columna_contenido .texto dt{float:none;clear:none;margin-bottom:0.2em}
+	.columna_contenido .texto dt.enline{ float: left;margin: 0; padding: 0 .3em 0 0; }
+	.columna_contenido .texto dt.enlineC2 { float: left;margin: 0 0 0 .5em; padding: 0 .3em 0 1em;background-repeat: no-repeat;background-position: left .7em;background-image: url(../img/bullet_dtinline.gif); }
+	.columna_contenido .texto dd.listaComun {clear:left;background:red;padding-left:1.3em;background:url(../img/bullet_dist_subnivel.gif) left 3px no-repeat}
+	.columna_contenido .texto dd ul {padding:0;margin:0;}
+	.columna_contenido .texto dd ul li, * html .columna_contenido .texto dd ul li{margin:0;list-style:none;padding:0 0 0.5em 1.3em;text-indent:0;background:url(../img/bullet_dist_subnivel.gif) left 3px no-repeat}
+	.columna_contenido .texto dd.enline{ float: left; }
+	.columna_contenido .texto dd.enlineC2{ padding: 0 .3em 0 0; clear: right; }
+	
+	.columna_contenido .texto .resumen{margin:0.5em; color: #040D49;}
+
+/*++ FAQ ++*/
+	.columna_contenido .texto a{text-decoration:none}
+	.columna_contenido .texto a:hover{text-decoration:underline}
+
+	.columna_contenido ul.listadoTitulares{ margin:0;	padding:0;	list-style: none;list-style-image: url(../img/bullet_dist.gif);}
+	.columna_contenido ul.listadoTitulares li {margin: 0 0 0.6em 1.5em;}
+	.columna_contenido ul.listadoTitulares li a{color: #666}
+
+/*++ Ver más/Subir  ++*/	
+/*.ver_mas, .subir {text-align: right;margin: 0;padding: 0;clear: both;}*/
+.ver_mas a, .subir a {color: #4392ab;font-size: 0.56em;vertical-align: top;padding-left:7em}
+.ver_mas a{background:url(../img/circulosgrmenos.gif) left 1px no-repeat}
+.subir a{background:url(../img/circulosgrmas.gif) top left no-repeat;padding-left:6em}
+
+.columna_contenido .listado_ficheros {margin: .5em 0 0 0;}
+.columna_contenido .listado_ficheros ul {margin:0;padding:0;font-size:0.7em}
+.columna_contenido .listado_ficheros ul li{
+	margin:0;
+	padding:0 0 .5em 1em;
+	text-indent:0;
+	background-image:url(../img/bullet_doc.gif);
+	background-position: 0 .8em;
+	background-repeat: no-repeat;
+	list-style:none; }
+.listado_ficheros ul p.titulo a{ color: #05689f;text-decoration: none; }
+.listado_ficheros ul p.titulo a:hover {text-decoration: underline; }
