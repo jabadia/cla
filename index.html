@@ -22,7 +22,9 @@
 	<link rel="stylesheet" href="css/ie.css" />
 <![endif]-->
  
- 
+<style>
+	.boton{ cursor:pointer; }
+</style> 
  
  
 <script> 
@@ -1169,3 +1171,16 @@ var ACCEX_PERFILACTUA = "ACCEX_PERFILACTUA";
  
 </script>
  
+<script>
+	function irListadoConFiltro()
+	{
+		var tipoVia = document.getElementById('localTipoVia').value.trim();
+		var localVia = document.getElementById('localVia').value.trim();
+		var numLocal = document.getElementById('numDesdeR').value.trim();
+		window.location = "list.html?" +
+			"tipoVia=" + tipoVia + "&" +
+			"localVia=" + localVia + "&" +
+			"numLocal=" + numLocal + "&" +
+			"";
+	}
+</script>
