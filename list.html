@@ -1284,15 +1284,20 @@ var ACCEX_PERFILACTUA = "ACCEX_PERFILACTUA";
 	    width='838' height='400' 
 	    frameborder='0' scrolling='no'
 	    marginheight='0' marginwidth='0' 
-	    src='http://devel.local/embed-viewer/url-generator/../viewer/embedViewer.html?webmap=bb7dd214060a4d97a1fead003ad1af37&amp;home=true&amp;showPopup=true&amp;layerId=Locales&amp;fieldId=id_local&amp;featureId=280012039'>
+	    src='/embed-viewer/viewer/embedViewer.html?webmap=bb7dd214060a4d97a1fead003ad1af37&amp;home=true&amp;showPopup=true&amp;layerId=Locales&amp;fieldId=id_local&amp;featureId=280012039'>
 </iframe>
 
 <script>
 	function irConsulta(id_local)
 	{
 		document.getElementById('map-frame').contentWindow.postMessage('change-id:Locales:id_local:' + id_local + ":1", '*');
+	}
 
-
+	function consultaSigma(tipoLocal,idLocal)
+	{
+		console.log(arguments);
+		window.location = "detail.html?" +
+			"id_local=" + idLocal;
 	}
 
 	function initConsulta()
